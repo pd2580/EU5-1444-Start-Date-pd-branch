@@ -29489,6 +29489,7 @@ countries = {
 
 			bishreit dalay doloodyn_gobi ikh_narttin_chuluu
 			saikhandulaan ulaanbadrakh
+			urga
 		}
 
 		include = "far_east_asia_monarchy_not_present"
@@ -29501,16 +29502,11 @@ countries = {
 			ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
 			ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
 			ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
+			type = steppe_horde
+			heir_selection = tribal_oldest_male
 		}
-		court_language = northern_mandarin_dialect
+		court_language = mongolian_language
 		tolerated_cultures = {
-			yan_culture
-			jilu_culture
-			jiaodong_culture
-			zhongyuan_culture
-			liang_culture
-			jianghuai_culture
-			shu_culture
 		}
 		country_rank = rank_duchy
 		flag = "YUA"
@@ -29646,8 +29642,8 @@ countries = {
 			bazhai_duyun dushan
 			bafan
 			qingjiang_liping taigong
-			ganzhou gaotai hongshui liyuan qidaban qilian sanjiaocheng shandan yongchang_ganzhou
-			anding_suzhou dangcheng kuyu_shazhou guazhou jinta niuquanzi shazhou suzhou_gansu chijin yangguan
+			ganzhou hongshui sanjiaocheng shandan yongchang_ganzhou
+			anding_suzhou dangcheng kuyu_shazhou guazhou jinta shazhou suzhou_gansu chijin yangguan
 			anyuan datong_xining gulang gushan jinchang xiliang haomen nianbo xining baiting zhuanglang zhenfan
 			baoji fengxiang fufeng linyou longzhou_fengxiang meixian qianyang qishan longan
 			chengzhou dingxi fuqiang longxi_gongchang xihe_huizhou huizhou_gongchang huizhou jiezhou liangdang ningyuan_gongchang baimaguan tongwei qinan chengji sancha qingshui zhangxian
@@ -47874,7 +47870,7 @@ countries = {
 
 			karakorum khar_balgas orkhon tsetserleg
 			baibalyk kharkhul mori_baridag tarvagatai
-			urga kedun khar_bukhyn kharuukh manzushir tuul
+			kedun khar_bukhyn kharuukh manzushir tuul
 			zagzuugiin_balgas altan_gadas chuluutyn delger_moron ider
 
 			barkul altayn_ovor_gobi naomao santokhe zuun_garyn_gobi
@@ -48010,6 +48006,9 @@ countries = {
 			dashahai bailongdui miran loulan
 			kumux
 			yuanhu
+		}
+
+		our_cores_conquered_by_others = {
 			nazhi hami geziyandun
 		}
 
@@ -48021,6 +48020,40 @@ countries = {
 		}
 
 		capital = qocho
+	}
+
+	HMI = { # Kara Del Mongols
+		own_control_core = {
+			nazhi hami geziyandun niuquanzi
+		}
+
+		our_cores_conquered_by_others = { }
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "asia_advanced_no_pagan_tribe"
+		government = {
+			heir_selection = tribal_oldest_male
+		}
+		country_rank = rank_county
+		court_language = mongolian_language
+		capital = hami
+	}
+
+	SRY = { # Yughur
+		own_control_core = {
+			qidaban liyuan qilian gaotai
+		}
+
+		our_cores_conquered_by_others = { }
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "asia_advanced_no_pagan_tribe"
+		government = {
+			heir_selection = tribal_oldest_male
+		}
+		country_rank = rank_county
+		court_language = mongolian_language
+		capital = liyuan
 	}
 
 	MNL = { #Mangalai
