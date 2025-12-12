@@ -47784,7 +47784,7 @@ countries = {
 		capital = almaliq
 	}
 
-	YRK = { # Yarkand
+	YRK = { # Yarkent
 		own_control_core = {
 			akto kizilsu
 			kashgar artush barchuk maralbexi payzawat tokkuzak yingisar yopurga
@@ -47803,6 +47803,10 @@ countries = {
 		court_language = karluk_language
 		tolerated_cultures = {
 			khorezmian_culture
+		}
+
+		government = {
+			type = monarchy
 		}
 
 		capital = yarkand
@@ -49402,7 +49406,13 @@ countries = {
 	SUK = { #Sukhothai
 		own_control_core = {
 			sukhothai
-			ban_pa_la_ta chai_nat chakangrao mae_sot mueng_bang_yom mueng_rat nakhon_chum nakhon_sawan nakhon_thai phayuhakhiri phrae phraek phuenchapura song_khwae sra_luang sri_satchanalai sri_thep tak thung_yang
+			mae_sot mueng_bang_yom nakhon_thai phrae sri_satchanalai tak thung_yang
+			pua
+			nan
+		}
+
+		own_cores_conquered_by_others = {
+			phraek chai_nat sri_thep phayuhakhiri phuenchapura ban_pa_la_ta nakhon_sawan chakangrao nakhon_chum sra_luang song_khwae mueng_rat
 		}
 
 		include = "south_east_asia_monarchy_no_coast"
@@ -49433,6 +49443,8 @@ countries = {
 			chiang_mai
 			chiang_dao chiang_khong chiang_rai chiang_saen chom_khao_maneerat hot lampang lamphun mae_hong_son muang_jam muang_luang_phukha muang_wang muang_yuam mueng_thoen omkoi sariang vieng_phouka wiang_fang
 			mong_hpayak mong_hsat
+			phayao
+			muang_ngao
 		}
 
 		include = "south_east_asia_monarchy_no_coast"
@@ -49535,6 +49547,14 @@ countries = {
 			dong_lakhon dong_si_maha_phot lopburi muang_khuan_kra_buri phanat prachinburi rayong sa_kaeo saraburi
 			# Ligor
 			kraburi prasong
+			# Sukhothai
+			phraek chai_nat sri_thep phayuhakhiri phuenchapura ban_pa_la_ta nakhon_sawan chakangrao nakhon_chum sra_luang song_khwae mueng_rat
+			# Khmer
+			nokor_reach_seyma khorat phimai phutthaisong thung_samrit
+			# Vientiane
+			kaset_sombun chaiyaphum
+			# Hanthawaddy
+			ye kyainseikgyi haungtharaw
 		}
 
 		include = "south_east_asia_monarchy"
@@ -49546,7 +49566,11 @@ countries = {
 	PEG = { #Pegu / Hanthawaddy
 		own_control_core = {
 			martaban
-			dagon dala danubyu donwun haungtharaw hinthada hmawbi hpa_an ingapu kawliya kyainseikgyi kyaukkyi maubin mawlamyine myanaung myaungmya naungyo ngaputaw papun pathein pegu phyu sittaung thanlyin thaton twante ye
+			dagon dala danubyu donwun hinthada hmawbi hpa_an ingapu kawliya kyaukkyi maubin mawlamyine myanaung myaungmya naungyo ngaputaw papun pathein pegu phyu sittaung thanlyin thaton twante
+		}
+
+		our_cores_conquered_by_others = {
+			ye kyainseikgyi haungtharaw
 		}
 
 		include = "south_east_asia_monarchy"
@@ -49784,7 +49808,7 @@ countries = {
 	}
 
 	PHY = { #Phayao
-		own_control_core = {
+		own_cores_conquered_by_others = {
 			phayao
 			muang_ngao
 		}
@@ -49798,7 +49822,7 @@ countries = {
 	}
 
 	PUA = { #Pua / Nan
-		own_control_core = {
+		own_cores_conquered_by_others = {
 			pua
 			nan
 		}
@@ -49827,14 +49851,14 @@ countries = {
 			muang_phuan bolikham thoulakhom
 			thakhek  keutkeut khamkeut ngoc_ma
 			muang_khemarat yasothon roi_et
-			chaiyaphum kaset_sombun khon_san mancha_khiri
+			khon_san mancha_khiri
 			ban_khon sayniabuli vang_vieng
 
 			# Khmer
 			mahaxay nong_bok
 			savannakhet thuan_binh muang_phalan sepon muang_ta_oi muang_phin
-			thung_samrit nokor_reach_seyma phimai khorat phanom_rung
-			phutthaisong buriram suwannaphum prathai_saman muang_tam
+			phanom_rung
+			buriram suwannaphum prathai_saman muang_tam
 			rattanaburi sangkha khukhan prasat_thong_lang vat_phou
 			champasak muang_mang ban_phone tonle_kong idkabue samxay
 		}

@@ -719,10 +719,9 @@ diplomacy_manager = {
     dependency = { first = PIN second = TNG subject_type = vassal }
     dependency = { first = PIN second = BPR subject_type = vassal }
     dependency = { first = SUK second = PUA subject_type = vassal }
+    dependency = { first = AYU second = SUK subject_type = vassal }
     dependency = { first = HSE second = MGT subject_type = vassal }
     dependency = { first = CHI second = MLM subject_type = vassal }
-    dependency = { first = SUK second = PTC subject_type = vassal }
-    dependency = { first = SUK second = TSM subject_type = vassal }
     dependency = { first = LAV second = ADH subject_type = vassal }
 
     #------------Indonesia-------------
