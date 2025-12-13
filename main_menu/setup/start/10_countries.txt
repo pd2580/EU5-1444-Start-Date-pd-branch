@@ -55,7 +55,6 @@ countries = {
                 visby slite hoborg
             }
 
-
             own_control_colony = {
                 asele volgsjo bygdea skelleftea byske pitea ranea tornea kiemi simo kuivaniemi uleaborg brahestad karleby pedersore vora storkyro heinjoki jaskis
             }
@@ -23838,9 +23837,9 @@ countries = {
 
         #--------------East Asia-------------
 
-        #Korea
+        # Goryeo Korea
         KOR = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 haenam jindo yeonggam naju muan
                 boseong heungyang jangheung hwasun
                 jeonju gimje
@@ -23878,10 +23877,6 @@ countries = {
                 seongcheon
                 myeongju uljin samcheok jeongseon
                 goseong tongcheon ingnyeong
-
-            }
-
-            our_cores_conquered_by_others = {
                 deungju munju goju hwaju north_jeongju
                 yangam
                 tamna seongwi
@@ -23945,9 +23940,106 @@ countries = {
             }
         }
 
+        # Joseon Korea
+        JOE = {
+            own_control_core = {
+                seogyeong jeungsan samhwa junghwa seongcheon yangam
+                deokju yeongwon gaeju sukju sunju
+                uiju sakju seonju gwiju jeongju_jeongju
+                ganggye huju chosan huicheon unju
+                myeongju uljin samcheok goseong tongcheon ingnyeong ulleungdo
+                dongju geumseong hoeyang ichon pyeonggang
+                chunju hongcheon inje nangcheon yanggu
+                wonju yeongwol pyeongchang jeongseon hoengcheon
+                andong bonghwa yeongcheon mungyeong sangju
+                seongju taegu gaeryeong uiseong seonsan
+                gyeongju yeongil yeongju boseongbu yeongdeok yeongyang
+                jinju hadong namhae sacheon geoje geochang hapcheon
+                dongnae uian miryang ulju
+                kaesong papyeong yangju pocheon gapyeong inju jipyeong
+                namgyeong gwangju suwon icheon
+                jeonju gimje jinan mupung
+                naju haenam jindo jangheung yeonggam muan hwasun hekusando yeonggwang
+                namwon imsil jeongeup musong
+                suncheon boseong heungyang gokseong
+                tamna seongwi
+                haeju ongjin jangyeon baekcheon cheongsong pungcheon jaeryeong
+                hwangju bongju anak tosan pyeongju suan gokju
+                chungju eumseong goeju jecheon danyang_korea
+                gongju yeonsan jinjam yeongdong cheongju cheonan
+                hongju boryeong hansan seosan aju
+                gapsan samsu musan
+                gyeongseong buryeong gilju myeongcheon onseong heoryeong
+                hamheung dancheon bukcheong jangjin
+                hwaju munju deungju north_jeongju goju
+            }
+
+            include = "far_east_asia_monarchy"
+            government = {
+                ruler = joe_sejong
+
+                ruler_term = { character = joe_taejo start_date = 1392.8.5 end_date = 1398.10.14 regnal_number = 1 }
+                ruler_term = { character = joe_jeongjong start_date = 1398.10.14 end_date = 1400.11.13 regnal_number = 1 }
+                ruler_term = { character = joe_taejong start_date = 1400.11.13 end_date = 1418.8.10 regnal_number = 1 }
+                ruler_term = { character = joe_sejong start_date = 1418.9.18 regnal_number = 1 }
+
+                regnal_numbers = {
+                    name_seong_gye = 1
+                    name_bang_gwa = 1
+                    name_bang_won = 1
+                    name_do = 1
+                }
+
+                centralization_vs_decentralization = 50
+                aristocracy_vs_plutocracy = -20
+                land_vs_naval = 70
+                individualism_vs_communalism = 40
+                serfdom_vs_free_subjects = 10
+                reforms = {
+                    son_in_law_rule
+                }
+                laws = {
+                    legal_code_law = goryeon_code_policy
+                    medieval_levy_law = peasant_levies
+                    royal_court_customs_law = balanced_court_policy
+                    administrative_system = central_councils
+                    piracy_law = anti_piracy_policy
+                    distribution_of_power_law = dop_traditional_distribution_of_power
+                }
+                privilege = {
+                    #Nobles
+                    noble_armies
+
+                    #Clergy
+                    tax_exemption
+
+                    #Peasants
+                    partial_yield
+                }
+            }
+            capital = namgyeong
+            country_rank = rank_kingdom
+            variables = {
+                data = {
+                    {
+                        flag = "year_of_start_of_examination_system"
+                        data = {
+                            type = value
+                            identity = 133700000
+                        }
+                    }
+                }
+            }
+
+            tolerated_cultures = {
+                jurchen_culture
+                tamna_culture
+            }
+        }
+
         #Ssangseong https://en.wikipedia.org/wiki/Ssangseong_Prefecture
         SSG = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 deungju munju goju hwaju north_jeongju
                 yangam
             }
@@ -23966,15 +24058,12 @@ countries = {
 
         SYG = {
             #Shenyang
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 liaoyang dingliao dandong
                 gaizhou fuzhou_liaoyang jinzhou_dalian xiuyan zhuanghe
                 guangning kaicheng wangping yizhou_jinzhou
                 jinzhou_liaoyang dalinghe haizhou_liaoyang ningyuan_jinzhou
                 yizhou_jurchen ningchang tongliao
-            }
-
-            own_control_integrated = {
                 qiantun
             }
 
@@ -23998,7 +24087,7 @@ countries = {
 
         #Tamna https://en.wikipedia.org/wiki/Tamna_Prefectures
         TMN = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 tamna seongwi
             }
 
@@ -29438,8 +29527,450 @@ countries = {
 
         #China
 
-        CHI = {
-            #Yuán
+        # CHI = { #Yuán
+        # 	own_control_core = {
+        # 		#Proper China
+        # 		ningde fuan changshi
+        # 		minxian lianjiang luoyuan fuqing houguan minqing changle_fujian gutian yongfu_fuzhou
+        # 		ouning jianan pucheng_jianning songxi jianyang chongan zhenghe
+        # 		jinjiang tongan anxi dehua huian yongchun nanan_quanzhou
+        # 		shaowu guangze taining jianning putian xianyou
+        # 		changting ninghua_tingzhou liancheng shanghang qingliu wuping mingxi yongding_shanghang
+        # 		nanping datian shaxian jiangle shunchang yongan_sha youxi
+        # 		longxi zhaoan huafeng longyan pinghe nansheng zhangpu changtai zhangping
+
+        # 		zhongxiang fengle shipai fushui jingshan
+        # 		baicang baima longhui chengbu xiakou xinning_wugang shaoyang suxi wugang xinhua
+        # 		wuling taoyuan longyang yuanjiang yuannan
+        # 		changsha anhua_anhua chaling dongping yiyang_changsha yongan_youzhou liling liuyang loudi ningxiang qiaokou xiangtan xiangxiang xiangyin yongfeng_xiangxiang youzhou lukou
+        # 		chenyang guidong guiyang_chenzhou yizhang yongxing xinning_chen hanyang hanchuan
+        # 		yuanling qianyang_yuanzhou chenxi mayang huaihua xupu madi_yuanling luxi luyang
+        # 		hengyang anren changning pingyang_guiyang hengshan lanshan leiyang lingxian linwu xincheng
+        # 		huanggang qichun luotian huangan huangpi huangmei macheng qishui guangji
+        # 		yongping suining_jing huitong tongdao tianzhu yusha jingling xindi
+        # 		jiangling dangyang gongan xingshan zigui changlin changyang songzi xinhua_guizhou yuanan qianjiang jianli shayang shishou jinzhuping yiling zhijiang badong yidu
+        # 		shizhou
+        # 		suixian anlu gaocheng_suizhou yingshan tangcheng meiqiu xiaogan yingcheng yunmeng
+        # 		jiangxia daye wuchang jinkou tongcheng_wuchang puqi chongyang tongshan xianning yongxing_xingguo jiayu
+        # 		xiangyang banqiao baokang wudang fangling gucheng huanglong jinxiangping guanghua lutoudian nanzhang shangjin baihekou bomoping fancheng yicheng yun yunxi zaoyang zhushan zhuxi fengxi
+        # 		lingling dongan_yongzhou yingdao lengshuitan guiyang_hengyang yongming ningyuan qiyang jianghua
+        # 		baling anfu_li anxiang changshou_pingjiang huarong cili liyang_lizhou linxiang pingjiang shimen dayong
+
+        # 		linchuan lean_fuzhou chongren yihuang dongxiang jinxi
+        # 		ganxian changning_anyuan dingnan yudu xinfeng xingguo longnan qianhua ningdu shicheng_ningdu ruijin huichang anyuan_dingnan
+        # 		shangrao yanshan_guangxin guixi_guangxin yiyang_guangxin yongfeng
+        # 		luling taihe_taihe yongfeng_jian wanan futian yongxin yongning_taihe anfu_jian longquan_taihe jishui
+        # 		nancheng nanfeng xincheng_jianchang guangchang
+        # 		dehua_jiujiang pengze dean ruichang hukou
+        # 		qingjiang xingan_linjiang xinyu
+        # 		dayu chongyi nankang shangyou
+        # 		nanchang fengcheng_fengcheng fengxin jinxian jingan wuning fenning tonggu xinjian
+        # 		xingzi duchang anyi jianchang
+        # 	 	poyang yushan_guangxin anren_raozhou dexing fuliang leping shimen_poyang wannian yugan
+        # 		gaoan shanggao xinchang_yifeng
+        # 		yichun fenyi wanzai pingxiang
+
+        # 		huaining qianshan susong taihu tongcheng_anqing wangjiang zongyang
+        # 		wujin jiangyin wuxi yixing
+        # 		guichi shidai qingyang tongling dongliu
+        # 		qingliu_chuzhou zhaoxin quanjiao laian
+        # 		zhongli dingyuan_fengyang guzhen xiacai huaiyuan lingbi shouchun shuihu linhuan suzhou_fengyang
+        # 		gaoyou xinghua baoying guangde jianping hezhou_he hanshan
+        # 		shanyang_huaian qushan banpu andong_huaian gaoqiao ganyu shuyang qinghe_huaian yancheng funing_huaian taoyuan_huaian
+        # 		shexian yixian xiuning jixi_huizhou tunxi qimen wuyuan_huizhou
+        # 		luan huoqiu huoshan mabu shucheng yuexi yingshan_luan
+        # 		hefei chaoxian liangxian lujiang_luzhou wuwei
+        # 		ningguo taiping_ningguo jingxian jingde nanling xuancheng
+        # 		xiapi suining_pizhou suqian xinyi
+        # 		huating nanhui shanghai
+        # 		hongxian linhuai tianchang wuhe xuyi
+        # 		wuxian changshu chongming jiading kunshan wujiang
+        # 		dangtu fanchang wuhu
+        # 		xuzhou dangshan fengxian xiaoxian peixian
+        # 		jiangdu xixi haimen hailing jinghai_tongzhou rugao juegang taixing yangzi
+        # 		shangyuan jiangning jurong luhe liyang lishui_yingtian wujiang_yingtian
+        # 		yingzhou qiaoxian yingshui chengfu mengcheng yingshang shenqiu taihe
+        # 		dantu danyang jintan
+
+        # 		lishui daxue qingtian minghe longquan suichang qingyuan_chuzhou jinyun songyang yunhe
+        # 		hangzhou fuyang_hangzhou haining linan yuhang
+        # 		wuxing anji deqing changxing jiaxing chongde haiyan
+        # 		jinhua dongyang wuyi_jinhua lanxi pujiang yiwu yongkang
+        # 		dinghai cixi xiangshan fenghua yinxian changguo
+        # 		xian_quzhou jiangshan kaihua longyou changshan
+        # 		shaoxing shangyu shengxian xiaoshan xinchang yuyao zhuji
+        # 		linhai xianzhu huangyan ninghai wenling tiantai xianju
+        # 		yongjia pingyang yueqing luoyang_wenzhou ruian shuangxi
+        # 		jiande chunan suian tonglu
+
+        # 		ansu dingxing gaoyang_baoding laishui boye mancheng wanzhou_baoding qingyuan_baoding puyin tangxian gecheng xincheng_baoding shulu guixin yixian_yizhou
+        # 		baochang songzhou shangdu dongliangting yixingzhou pingdisonglin enhua fuzhou kuanhe_xingzhou niushan limin baitan weining chagannur quanning taipingzhuang liuyuan xiabancheng yingchang huanzhou gaoyuan zhangsanying zhongdu
+        # 		changyuan yuancheng baima_daming dongming nanle neihuang puyang qingfeng weixian xunxian
+        # 		xiankang xingzhong lizhou daning_pingquan longshan huihe hezhong naiman pingquan chuanzhou wuping_daning shenshui fushu
+        # 		qinghe guangping handan yongnian mingshui quzhou
+        # 		jiaohe qingchi dongguang fucheng_hejian liguo hejian jinghai tiaoxian leshou nanpi ningjin qingyun huichuan renqiu wuqiao suning dagu zhigu yanshan gucheng_jingzhou
+        # 		guangzong renxian julu neiqiu shahe xingtai
+        # 		luanyang banbishan baodi yijin dadu changping fangshan fengrun guan huairou daxing yuyang sanhe_tongzhou shicheng_jizhou dongan_shuntian lutai miyun pinggu dacheng shunyi xianghe luxian wenan wuqing wanping yongqing yutian fanyang zunhua
+        # 		huaian yunzhou dushikou xuanping longmen_chicheng huailai shunsheng longqing xuande baoan_baoan
+        # 		macheng_luanzhou changli funing laoting longwangmiao yifeng lulong qianan sanchakou
+        # 		anping xinle anxi_dingzhou ningjin_zhaozhou fuping gaocheng hengshui yuanshi_zhending huolu gucheng_zhending xindu_jizhou lincheng lingshou longping_zhaozhou nangong pingshan_zhending quyang jingan_shenzhou jingxing wuji wuyi xingtang zanhuang zaoqiang pingji zhending
+
+        # 		yique dengfeng gongxian yiyang_songzhou lingbao luanchuan yongning_shanzhou luoyang lushi mengjin mianchi shanxian songzhou_songzhou wenxiang xinan yanshi yiyang zhuyang
+        # 		henei jiyuan mengxian wuzhi wenxian xiuwu
+        # 		yanling changge dancheng fengqiu fugou xiangcheng wanqiu kaifeng lanyang linying luyi mixian kaocheng ningling qixian suiyang_guide shangshui nandun xiangyi taikang tongxu weishi xiangcheng_kaifeng xiayi xihua xingyang xinzheng changshe yancheng_kaifeng yanjin yongcheng yuanyang yucheng_kaifeng yangdi zhecheng guancheng_zhengzhou zhongmu
+        # 		baofeng biyang rangxian fangcheng jiaxian yexian xichuan lushan nanyang nanzhao neixiang liangxian_ruzhou qingtai tanghe tongbai wuyang shunyang yaoshan xinye huayuantou xixia zhenping
+        # 		xiping shangcai changtan guangshan gucheng_xi xincai gushi dingcheng luoshan minggang queshan xinyang ruyang shangcheng suiping xizhou lishan_xinyang pingyu zhenyang zhugao
+        # 		huixian qizhou jixian xinxiang
+        # 		anyang fuyang linzhou linzhang shexian_cizhou tangyin wuan
+
+        # 		chengshan penglai fushan_muping dasong rushan jiangshan_laiyang laiyang huangxian muping qixia weihai wendeng zhaoyuan
+        # 		chaocheng chiping fanxian gaotang guancheng guantao juancheng liaocheng linqing shenxian tangyi enzhou xiajin qiuxian
+        # 		bohai yanshen changqing licheng_yizhou deping lingzhou_dezhou zhanhua yanci licheng jiyang laiwu lanling laoling lijin ande linyi_jinan zhangqiu pingyuan_jinan qidong shanghe xincheng_jinan fengfu gaoyuan_jinan wudi feicheng xintai qihe yangxin yucheng zouping
+        # 		changyi fushan_jiaozhou gaomi jiaoxi jimo luxiang yexian_laizhou lingshanwei jiaoshui beihai
+        # 		anqiu boxing changle yiyuan gegou lean juxian linqu mengyin yidu_qingzhou rizhao shizilu shouguang wulian yishui zhucheng zichuan
+        # 		chuqiu chengwu dingtao xucheng feixian yutai jiyin jiaxiang tengdong rencheng jinxiang juye shouzhang linyi ningyang pingyin qufu shagou shansu sishui tancheng tengxian donge wenshang yanggu_yanzhou ziyang yuncheng yizhou_tengzhou zouxian
+
+        # 		yinshan shanyin datong_datong hebin erdao xuanning guangling zhenwu huairen fengzhou hunyuan zhongling jining feihu lingqiu shenwu ningbian yunnei shanyang_yingzhou tiancheng liangcheng dongsheng wuchuan baideng jincheng yulin_datong lingxian_shanxi pingdi yunchuan
+        # 		xihe jiexiu pingyao xiaoyi heshun yushe liaoshan
+        # 		shangdang huguan licheng_luan lucheng_luan qingyang_luan tunliu xiangyuan zhangzi
+        # 		jishi_anze daning fenxi fushan hejin hongtong huoyi jiangxian jishan jizhou linfen lingshi linjin pinglu puxian quwo ruicheng shilou wanquan wenxi xiaxian taiping_jiangzhou xiangning yuanqu zhengping xichuan_xizhou yicheng_pingyang yonghe hedong yueyang_anze xiexian tongdi qinyuan wuxiang
+        # 		daizhou dingxiang lanzhou_kelan baode fangshan_lishi jianzhou_daizhou luchuan hehe hequ yangqu jiaocheng jingle kelan linxian lishi dinghu loufan ninghua piantouguan pingding xugou qixian_taiyuan shouyang taigu pingjin kehu wenquan wenshui taizhou wuzhou xingxian xiurong leping_pingding guozhou yuci yuzhou ningxiang_shizhou
+        # 		duanshi gaoping jincheng_zezhou lingchuan_zezhou qinshui yangcheng
+
+        # 		haiyang sanhe_chaozhou pantian chengxiang huilai chaoyang pingyuan_mei puning sanrao jieyang
+        # 		maoming xinyi_gaozhou dianbai shilong shicheng wuchuan_huazhou baoning
+        # 		guangzhou baoan_dongguan conghua shunde dongguan guanghai nanhai limushan huiqi lianshan xinfeng_panyu guanfu liannan zhengcheng longmen qingyuan panyu lianzhou yangshan xiangshan_xinhui
+        # 		guishan khuzhupai haifeng heping heyuan lankou longchuan_xunzhou lianping lufeng_haifeng boluo pingshan_huiyang changle_xunzhou xingning qinjiang zuokeng
+        # 		haikang qingdao zhanchuan suixi xuwen
+        # 		hepu lingshan anyuan_lianzhou ruxi xiaodong gaoyang baochang_nanxiong shixing
+        # 		qiongshan yande ganen shuihui dingan lehui chengmai lingao lingshui yilun ningyuan_wananjun changhua xinhui wanan_wananjun wenchang
+        # 		qujiang hanguang mengli lechang wengyuan renhua ruyuan yingde
+        # 		gaoyao yangchun duanxi enping gaoming guliang fengchuan shuangshui guangning_zhaoqing sanshui duling sihui xinxing_nanen ducheng yangjiang jinkang
+        # 		lingui guanyang liupu dayaoshan lipu lingchuan yining luorong lishan_pingle qingxiang xingan xiyan yangshuo yongfu
+        # 		wangmu luodian
+        # 		maping changan shanglin liucheng luocheng huaiyuan_rongzhou qianjiang_binzhou rongshui tongdao_rongzhou wuxian_liuzhou yangshou laibin
+        # 		langning wuyuan_nanning yongning_hengzhou qianlong
+        # 		pingle linhe fengcheng gongcheng guiling longping_pingle fuchuan
+        # 		cangwu bobai cenxi dongan wutun huaiji beiliu rongcheng luchuan_rongzhou puning_rongzhou shahe_bobai tanjin nanliu
+        # 		guiping luoxiu guizhou_xunzhou pingnan watang
+        # 		bazhai_duyun dushan
+        # 		bafan
+        # 		qingjiang_liping taigong
+        # 		ganzhou gaotai hongshui liyuan qidaban qilian sanjiaocheng shandan yongchang_ganzhou
+        # 		anding_suzhou dangcheng kuyu_shazhou guazhou jinta niuquanzi shazhou suzhou_gansu chijin yangguan
+        # 		anyuan datong_xining gulang gushan jinchang xiliang haomen nianbo xining baiting zhuanglang zhenfan
+        # 		baoji fengxiang fufeng linyou longzhou_fengxiang meixian qianyang qishan longan
+        # 		chengzhou dingxi fuqiang longxi_gongchang xihe_huizhou huizhou_gongchang huizhou jiezhou liangdang ningyuan_gongchang baimaguan tongwei qinan chengji sancha qingshui zhangxian
+        # 		chenggu liuba lueyang duoshui nanzheng daan liangquan xixiang yangyuan yangzhou foping guochuan
+        # 		didao kangu lanzhou lutang weiyuan_lintao
+        # 		fuchuan_ningxia lingzhou dingyuan_lingzhou lingwu yanchi ningxia mingsha yingli
+        # 		huating_pingliang guangan kaicheng_guyuan xianzhou jingning jingchuan chongxin longde pingliang sanchuan zhenrong zhenyuan lingtai shuiluo
+        # 		anhua baimachen dingbian huachi huanzhou_qingyang zhenning_qingyang heshui anbian ningzhou
+        # 		jingzhao baishui xinping xianning_xian chengcheng chunhua tongzhou zhouzhi fuping_xian huxian hancheng heyang_xian huayin huazhou yongshou jingyang lantian liquan lintong shangluo luonan pucheng qianyou qianzhou sanyao sanyuan shangnan shangzhou shanyang fucheng tongguan_tongchuan weinan xianyang sanshui_binzhou huayuan zhenan
+        # 		xicheng hanyin ningshan pingli shiquan xunyang ziyang_xingan goupingguan
+        # 		anding baoan yichuan fugu fuzhou_yanan ganquan kaiguang huaiyuan_mizhi jiazhou luochuan dingrong suide mizhi zhongbu qingjian shenmu fushi yanchang yanchuan yijun yulin jingbian ansai
+        # 		langzhong jiachuan huacheng miangu zhangming zengkou cangxi nanjiang nanbu tongjiang puan zhaohua zitong
+        # 		chengdu anzhou zixian jinyuan deyang guanzhou shifang jianzhou mianzhou mianzhu neijiang pixian shiquan_maozhou shuangliu pengshan renshou xindu jingyan jintang ziyang_zizhong
+        # 		baxian tongliang banan bishan changshou_changshou rongchang fuzhou_sichuan dianjiang pengshui shizhao jiangjin qianjiang_shaoqing dazu nanchuan fengdu wulong dingyuan yongchuan linjiang
+        # 		longyou_jiading emei jiajiang rongzhou weiyuan_jiading qianwei
+        # 		fengjie xinning_dazhou daning_kuizhou tongchuan_dazhou dongxiang_dazhou kaizhou liangshan mingtong wanzhou taiping wushan jianshi yunyang
+        # 		luzhou naxi hejiang jiangan
+        # 		meizhou qingshen danleng pengzhou
+        # 		qiongzhou pujiang_qiongzhou dayi
+        # 		qingchuan
+        # 		nanchong yingshan_shunqing huaying xichong yilong linshui qujiang_guangan liujiang yuechi xiangru dazhu
+        # 		huili huichuan_dechang kuozhou puge
+        # 		qixian_tongchuan pengxi lezhi xiaoxi shehong anyue yanting zhongjiang suining
+        # 		yibin changning_changning fushun nanxi qingfu xuanhua
+        # 		mingshan yandao rongjing
+
+        # 		#Mongolia
+        # 		buir_nuur barun_xiabaer khalkh tamsabulag
+        # 		bars_khot bayan_tumen bayantsagaan dalai_nuur menen
+        # 		hailar bayan_ula hulun xuguit yimin
+        # 		avraga kherlen rahsaan_khad uguumur undurkhaan
+        # 		enhe_hada jiliu lower_gazimur merelka upper_gazimur urov
+        # 		abagaita gegen hasar khirkhira talman_boorj
+        # 		choyrin_datsan bayan gazrin_chuluu takhilyn ulziit
+        # 		tavan_tolgoi matad sharga_uul sumtiin zara_uul
+        # 		jingzhou_dorbod bathahalak chahar muumyangan ulan_hua ulanchab
+        # 		erenkhot avga baganuur khobootsar shuluun_khoboot_tsagaan sonod
+        # 		bishreit dalay doloodyn_gobi ikh_narttin_chuluu saikhandulaan ulaanbadrakh
+        # 		avnagar chono khuuchid sangiin_dalai sorin_nuur ulgain uzemchin
+        # 		kyakhta khadanzaa khan_khentii tsokh
+        # 		selenge khimni ulenkhe zed zelterijin
+        # 		amarbayas_galang bornuur eroo
+        # 		sulkhari khilgo khilgoson ung
+        # 		ude_baikal anaa bureen khudan khurbe
+        # 		khovd achit_nuur haerhhana huysiyn khurgan tahiltyn_khotgot tsagaan_usun
+        # 		ulaagchiin airag_nuur hunguy khyargas_nuur telmen
+        # 		ulaamgom dzaigil erzin tes turuum
+        # 		uliastai ogomoor teel zavkhan
+        # 		nibuchu ingedei
+        # 		qorqonaq_yubur aga boorj unda
+        # 		silkari kara_shilka
+        # 		tsagaan baruun_tar_nuur lower_ulz upper_ulz yakhi zyyn_tar_nuur
+        # 		onon balj baldan_bereeven kyra
+        # 		bayankhot alxa bagh bayannurhong urad
+        # 		del_khad galbyn_gobi khatanbulag oiyin_korken ooshiyn_gobi zhavklant_khairkhan
+        # 		bayannur uraqai xinhure
+        # 		khara_khoto banzart_khairkhan naraan_chilaun noyon_uul zag_suujiyn_gobi
+        # 		ordos aerzhai otog tongwancheng
+        # 		bii choigan systyg
+        # 		kaa balyktyg buren_khem busiyn
+        # 		den_terek khemchik ulug usun
+        # 		khatgal eringiin uur
+        # 		karakorum khar_balgas orkhon tsetserleg
+        # 		baibalyk alyanbulag kharkhul mori_baridag tarvagatai
+        # 		urga kedun khar_bukhyn kharuukh manzushir tuul
+        # 		zagzuugiin_balgas altan_gadas chuluutyn delger_moron ider
+        # 		barkul altayn_ovor_gobi naomao santokhe zuun_garyn_gobi
+        # 		otegu_qulan bugat chikhan_agui tevsh_uul tsagaan_agui tsogt
+        # 		ongiin_khiid gimpil_darjaalan shaazan_khot shaazan_tolgoi suriig
+        # 		ulaan bogd khadat ukhaa_khudag
+        # 		khalzan_shireg baidrag biger boontsagaan khangal naran orog tuin
+        # 		tost_uul gaxun_gobi shargyn_gobi shira_qulusun
+        # 		fuxin
+        # 	}
+
+        # 	own_control_integrated = {
+        # 		chit nurchuu tura uldurga kuenga uryum
+
+        # 		lingfang xuanhua_nanning ningpu
+        # 	}
+
+        # 	own_control_conquered = {
+        # 		amgun dukin dzhuk imilen kerbi suluk
+        # 		nurgan bulava shantar torom tugur usalgin
+        # 		boli achan nemptu simmi uninka xungake
+        # 		kedar bitki evur pilda uschu
+        # 		nanghaer idy_sakhalin porokotan wuliehe
+        # 		guohuo boluohe kushunkotan nayoro
+        # 		datta deren kema koppi samarginka tumzhdin
+        # 		urmi bidzhan bira kukan kur sutara
+        # 		yakesa amazar emuer mohe ollo urka
+        # 		gilyuy bryante mogot tukuringra tynda urkan
+        # 		humar bir_amur kuanhe pangu sahar tahe
+        # 		aigun arkhara chenqing jiajin nioman xunhe zhanhe
+        # 		gromatukha birma tehcha tom tygde yor
+        # 		selemde burunda buse kogan mamyn nehru ulma
+        # 		upper_nioman akishma olongki tujun tyrma urgal
+        # 		djee argi dep kupuri mulmuga tok
+        # 		hulan bayan_susu hailun hvlan ougen
+        # 		shangjing boduna hulawen yushu zhaozhou_jurchen
+        # 		ilan_hala hailang malong mudan_ula ningguta
+        # 		chalin taowen wanhufu wehe
+        # 		taizhou_jurchen buteha chol hurle
+        # 		talaha dalaiketun nemeri sart yilaha zhalong
+        # 		qiqihar arun bila laha nuomin
+        # 		chaghankhot gorlos huolin taluhe tuliemao wafang
+        # 		mergen dobkuri gan kuile menlu non
+        # 		zhengjiatun haihaer kailu linhuang qingzhou_mongol xinkai
+        # 		alchan bikinka imanka katen vaka xunka
+        # 		juru_hoton dongning jixi mishan mulun
+        # 		anchun hulin namunka noto_ussuri yiman
+        # 		lahasusu futi nuoluo shuangyashan tulguur
+        # 		kaiyuan_warka anju_nurgan nogule shili yongmingcheng
+        # 		huncun kahari tulazi
+        # 	}
+
+        # 	include = "far_east_asia_monarchy"
+        # 	include = "expl_mongols"
+        # 	include = "expl_china"
+        # 	include = "expl_silk_road_west"
+        # 	include = "expl_silk_road_center"
+        # 	include = "expl_silk_road_east"
+        # 	government = {
+        # 		sinicized_vs_unsinicized = -50 # Bayan's policies
+
+        # 		laws = {
+        # 			status_of_the_han_law = limit_the_han_powers
+        # 		}
+
+        # 		reforms = {
+        # 			legacy_of_kublai_khan
+        # 		}
+        # 		ruler = yua_togon_temur
+
+        # 		ruler_term = { character = kublai_khan start_date = 1271.12.18 end_date = 1294.2.18 }
+
+        # 		ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
+
+        # 		ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
+        # 		ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
+        # 		ruler_term = { character = yua_togon_temur start_date = 1333.7.19 }
+        # 	}
+        # 	court_language = northern_mandarin_dialect
+        # 	accepted_cultures = {
+        # 		jilu_culture
+        # 		zhongyuan_culture
+        # 		qin_culture
+        # 		jianghuai_culture
+        # 		liang_culture
+        # 		huaihai_culture
+        # 		tongtai_culture
+        # 		chu_culture
+        # 		changde_culture
+        # 	}
+        # 	tolerated_cultures = {
+        # 		yan_culture
+        # 		jiaodong_culture
+        # 		wu_culture
+        # 		yue_wu_culture
+        # 		liaodong_culture
+        # 		shu_culture
+        # 		jin_culture
+        # 		xuanzhou_culture
+        # 		wuzhou_culture
+        # 		quzhou_culture
+        # 		chuzhou_culture
+        # 		jiangshan_culture
+        # 		taizhou_wu_culture
+        # 		ouhai_culture
+        # 		tunxi_culture
+        # 		jixi_culture
+        # 		qiwu_culture
+        # 		xinxiang_culture
+        # 		laoxiang_culture
+        # 		xianxi_culture
+        # 		yongzhou_culture
+        # 		hengzhou_culture
+        # 		waxiang_culture
+        # 		gan_culture
+        # 		kejia_culture
+        # 		huizhou_hakka_culture
+        # 		dongjiang_culture
+        # 		fuzhou_culture
+        # 		funing_culture
+        # 		manjiang_culture
+        # 		xinghua_culture
+        # 		minnan_culture
+        # 		chaozhou_culture
+        # 		fulao_culture
+        # 		leizhou_culture
+        # 		qiong_culture
+        # 		cunhua_culture
+        # 		jianning_culture
+        # 		yuehai_culture
+        # 		xinhui_culture
+        # 		malao_culture
+        # 		huazhou_culture
+        # 		gaozhou_culture
+        # 		wuchuan_culture
+        # 		yangjiang_culture
+        # 		guangxin_culture
+        # 		tubai_culture
+        # 		yulin_culture
+        # 		guibei_culture
+        # 		yao_china_culture
+        # 		sibe_culture
+        # 		hlai_culture
+        # 		zhuang_culture
+        # 		hui_muslim_culture
+        # 		jurchen_culture
+        # 		daur_culture
+        # 		tumed_culture
+        # 		tujia_culture
+        # 		kharchin_culture
+        # 		kam_culture
+        # 		oirat_culture
+        # 		yi_culture
+        # 		tuvan_culture
+        # 		amdowa_culture
+        # 		mulam_culture
+        # 		yugur_culture
+        # 		monguor_culture
+        # 		uyghur_culture
+        # 		sui_culture
+        # 		rma_culture
+        # 		lahu_culture
+        # 		hmong_culture
+        # 	}
+        # 	capital = dadu
+        # 	country_rank = rank_empire
+        # 	flag = "YUA"
+        # 	country_name = "YUA"
+
+        # 	timed_modifier = {
+        # 		modifier = "chi_factional_strife"
+        # 		start_date = 1328.1.1
+        # 		date = 1368.1.1
+        # 		size = 1
+        # 	}
+        # 	timed_modifier = {
+        # 		modifier = "chi_administration_in_disarray"
+        # 		start_date = 1328.1.1
+        # 		date = 1368.1.1
+        # 		size = 1
+        # 	}
+        # }
+
+        YUA = {
+            #The Yuán fallback tag
+            own_control_core = {
+                tavan_tolgoi matad sharga_uul sumtiin zara_uul
+                erenkhot avga baganuur khobootsar shuluun_khoboot_tsagaan sonod
+                jingzhou_dorbod bathahalak chahar muumyangan ulan_hua ulanchab
+
+                buir_nuur barun_xiabaer khalkh tamsabulag
+                bars_khot bayan_tumen bayantsagaan dalai_nuur menen
+
+                hailar bayan_ula hulun xuguit yimin
+
+                avraga kherlen rahsaan_khad uguumur undurkhaan
+                kyakhta khadanzaa khan_khentii tsokh
+                onon balj baldan_bereeven kyra
+
+                selenge khimni ulenkhe zed zelterijin alyanbulag
+                amarbayas_galang bornuur eroo
+
+                sulkhari khilgo khilgoson ung
+                ude_baikal anaa bureen khudan khurbe
+                khatgal eringiin uur
+
+                nibuchu ingedei
+                qorqonaq_yubur aga boorj unda
+                silkari kara_shilka
+
+                tsagaan baruun_tar_nuur lower_ulz upper_ulz yakhi zyyn_tar_nuur
+
+                avnagar chono khuuchid sangiin_dalai sorin_nuur ulgain uzemchin
+
+                haihaer linhuang qingzhou_mongol
+
+                bishreit dalay doloodyn_gobi ikh_narttin_chuluu
+                saikhandulaan ulaanbadrakh
+                urga
+                tura chit uldurga kuenga nurchuu uryum
+
+                enhe_hada jiliu lower_gazimur merelka upper_gazimur urov
+
+                abagaita gegen hasar khirkhira talman_boorj
+            }
+
+            include = "far_east_asia_monarchy_not_present"
+            include = "expl_mongols"
+            include = "expl_silk_road_west"
+            include = "expl_silk_road_center"
+            include = "expl_silk_road_east"
+            government = {
+                ruler_term = { character = kublai_khan start_date = 1271.12.18 end_date = 1294.2.18 }
+                ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
+                ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
+                ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
+                type = steppe_horde
+                heir_selection = tribal_oldest_male
+            }
+            court_language = mongolian_language
+            tolerated_cultures = {
+            }
+            country_rank = rank_duchy
+            flag = "YUA"
+            country_name = "YUA"
+        }
+
+        MNG = {
+            #Míng
             own_control_core = {
                 #Proper China
                 ningde fuan changshi
@@ -29516,9 +30047,9 @@ countries = {
                 jiande chunan suian tonglu
 
                 ansu dingxing gaoyang_baoding laishui boye mancheng wanzhou_baoding qingyuan_baoding puyin tangxian gecheng xincheng_baoding shulu guixin yixian_yizhou
-                baochang songzhou shangdu dongliangting yixingzhou pingdisonglin enhua fuzhou kuanhe_xingzhou niushan limin baitan weining chagannur quanning taipingzhuang liuyuan xiabancheng yingchang huanzhou gaoyuan zhangsanying zhongdu
+
                 changyuan yuancheng baima_daming dongming nanle neihuang puyang qingfeng weixian xunxian
-                xiankang xingzhong lizhou daning_pingquan longshan huihe hezhong naiman pingquan chuanzhou wuping_daning shenshui fushu
+
                 qinghe guangping handan yongnian mingshui quzhou
                 jiaohe qingchi dongguang fucheng_hejian liguo hejian jinghai tiaoxian leshou nanpi ningjin qingyun huichuan renqiu wuqiao suning dagu zhigu yanshan gucheng_jingzhou
                 guangzong renxian julu neiqiu shahe xingtai
@@ -29568,8 +30099,7 @@ countries = {
                 bazhai_duyun dushan
                 bafan
                 qingjiang_liping taigong
-                ganzhou gaotai hongshui liyuan qidaban qilian sanjiaocheng shandan yongchang_ganzhou
-                anding_suzhou dangcheng kuyu_shazhou guazhou jinta niuquanzi shazhou suzhou_gansu chijin yangguan
+                ganzhou hongshui shandan yongchang_ganzhou
                 anyuan datong_xining gulang gushan jinchang xiliang haomen nianbo xining baiting zhuanglang zhenfan
                 baoji fengxiang fufeng linyou longzhou_fengxiang meixian qianyang qishan longan
                 chengzhou dingxi fuqiang longxi_gongchang xihe_huizhou huizhou_gongchang huizhou jiezhou liangdang ningyuan_gongchang baimaguan tongwei qinan chengji sancha qingshui zhangxian
@@ -29596,258 +30126,12 @@ countries = {
                 yibin changning_changning fushun nanxi qingfu xuanhua
                 mingshan yandao rongjing
 
-                #Mongolia
-                buir_nuur barun_xiabaer khalkh tamsabulag
-                bars_khot bayan_tumen bayantsagaan dalai_nuur menen
-                hailar bayan_ula hulun xuguit yimin
-                avraga kherlen rahsaan_khad uguumur undurkhaan
-                enhe_hada jiliu lower_gazimur merelka upper_gazimur urov
-                abagaita gegen hasar khirkhira talman_boorj
-                choyrin_datsan bayan gazrin_chuluu takhilyn ulziit
-                tavan_tolgoi matad sharga_uul sumtiin zara_uul
-                jingzhou_dorbod bathahalak chahar muumyangan ulan_hua ulanchab
-                erenkhot avga baganuur khobootsar shuluun_khoboot_tsagaan sonod
-                bishreit dalay doloodyn_gobi ikh_narttin_chuluu saikhandulaan ulaanbadrakh
-                avnagar chono khuuchid sangiin_dalai sorin_nuur ulgain uzemchin
-                kyakhta khadanzaa khan_khentii tsokh
-                selenge khimni ulenkhe zed zelterijin
-                amarbayas_galang bornuur eroo
-                sulkhari khilgo khilgoson ung
-                ude_baikal anaa bureen khudan khurbe
-                khovd achit_nuur haerhhana huysiyn khurgan tahiltyn_khotgot tsagaan_usun
-                ulaagchiin airag_nuur hunguy khyargas_nuur telmen
-                ulaamgom dzaigil erzin tes turuum
-                uliastai ogomoor teel zavkhan
-                nibuchu ingedei
-                qorqonaq_yubur aga boorj unda
-                silkari kara_shilka
-                tsagaan baruun_tar_nuur lower_ulz upper_ulz yakhi zyyn_tar_nuur
-                onon balj baldan_bereeven kyra
-                bayankhot alxa bagh bayannurhong urad
-                del_khad galbyn_gobi khatanbulag oiyin_korken ooshiyn_gobi zhavklant_khairkhan
-                bayannur uraqai xinhure
-                khara_khoto banzart_khairkhan naraan_chilaun noyon_uul zag_suujiyn_gobi
-                ordos aerzhai otog tongwancheng
-                bii choigan systyg
-                kaa balyktyg buren_khem busiyn
-                den_terek khemchik ulug usun
-                khatgal eringiin uur
-                karakorum khar_balgas orkhon tsetserleg
-                baibalyk alyanbulag kharkhul mori_baridag tarvagatai
-                urga kedun khar_bukhyn kharuukh manzushir tuul
-                zagzuugiin_balgas altan_gadas chuluutyn delger_moron ider
-                barkul altayn_ovor_gobi naomao santokhe zuun_garyn_gobi
-                otegu_qulan bugat chikhan_agui tevsh_uul tsagaan_agui tsogt
-                ongiin_khiid gimpil_darjaalan shaazan_khot shaazan_tolgoi suriig
-                ulaan bogd khadat ukhaa_khudag
-                khalzan_shireg baidrag biger boontsagaan khangal naran orog tuin
-                tost_uul gaxun_gobi shargyn_gobi shira_qulusun
-                fuxin
+                # Shenyang
+                liaoyang dingliao dandong
+                gaizhou fuzhou_liaoyang jinzhou_dalian xiuyan zhuanghe
+                jinzhou_liaoyang dalinghe haizhou_liaoyang ningyuan_jinzhou
+                qiantun
             }
-
-            own_control_integrated = {
-                chit nurchuu tura uldurga kuenga uryum
-
-                lingfang xuanhua_nanning ningpu
-            }
-
-            own_control_conquered = {
-                amgun dukin dzhuk imilen kerbi suluk
-                nurgan bulava shantar torom tugur usalgin
-                boli achan nemptu simmi uninka xungake
-                kedar bitki evur pilda uschu
-                nanghaer idy_sakhalin porokotan wuliehe
-                guohuo boluohe kushunkotan nayoro
-                datta deren kema koppi samarginka tumzhdin
-                urmi bidzhan bira kukan kur sutara
-                yakesa amazar emuer mohe ollo urka
-                gilyuy bryante mogot tukuringra tynda urkan
-                humar bir_amur kuanhe pangu sahar tahe
-                aigun arkhara chenqing jiajin nioman xunhe zhanhe
-                gromatukha birma tehcha tom tygde yor
-                selemde burunda buse kogan mamyn nehru ulma
-                upper_nioman akishma olongki tujun tyrma urgal
-                djee argi dep kupuri mulmuga tok
-                hulan bayan_susu hailun hvlan ougen
-                shangjing boduna hulawen yushu zhaozhou_jurchen
-                ilan_hala hailang malong mudan_ula ningguta
-                chalin taowen wanhufu wehe
-                taizhou_jurchen buteha chol hurle
-                talaha dalaiketun nemeri sart yilaha zhalong
-                qiqihar arun bila laha nuomin
-                chaghankhot gorlos huolin taluhe tuliemao wafang
-                mergen dobkuri gan kuile menlu non
-                zhengjiatun haihaer kailu linhuang qingzhou_mongol xinkai
-                alchan bikinka imanka katen vaka xunka
-                juru_hoton dongning jixi mishan mulun
-                anchun hulin namunka noto_ussuri yiman
-                lahasusu futi nuoluo shuangyashan tulguur
-                kaiyuan_warka anju_nurgan nogule shili yongmingcheng
-                huncun kahari tulazi
-            }
-
-            include = "far_east_asia_monarchy"
-            include = "expl_mongols"
-            include = "expl_china"
-            include = "expl_silk_road_west"
-            include = "expl_silk_road_center"
-            include = "expl_silk_road_east"
-            government = {
-                sinicized_vs_unsinicized = -50 # Bayan's policies
-
-                laws = {
-                    status_of_the_han_law = limit_the_han_powers
-                }
-
-                reforms = {
-                    legacy_of_kublai_khan
-                }
-                ruler = yua_togon_temur
-
-                ruler_term = { character = kublai_khan start_date = 1271.12.18 end_date = 1294.2.18 }
-
-                ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
-
-                ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
-                ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
-                ruler_term = { character = yua_togon_temur start_date = 1333.7.19 }
-            }
-            court_language = northern_mandarin_dialect
-            accepted_cultures = {
-                jilu_culture
-                zhongyuan_culture
-                qin_culture
-                jianghuai_culture
-                liang_culture
-                huaihai_culture
-                tongtai_culture
-                chu_culture
-                changde_culture
-            }
-            tolerated_cultures = {
-                yan_culture
-                jiaodong_culture
-                wu_culture
-                yue_wu_culture
-                liaodong_culture
-                shu_culture
-                jin_culture
-                xuanzhou_culture
-                wuzhou_culture
-                quzhou_culture
-                chuzhou_culture
-                jiangshan_culture
-                taizhou_wu_culture
-                ouhai_culture
-                tunxi_culture
-                jixi_culture
-                qiwu_culture
-                xinxiang_culture
-                laoxiang_culture
-                xianxi_culture
-                yongzhou_culture
-                hengzhou_culture
-                waxiang_culture
-                gan_culture
-                kejia_culture
-                huizhou_hakka_culture
-                dongjiang_culture
-                fuzhou_culture
-                funing_culture
-                manjiang_culture
-                xinghua_culture
-                minnan_culture
-                chaozhou_culture
-                fulao_culture
-                leizhou_culture
-                qiong_culture
-                cunhua_culture
-                jianning_culture
-                yuehai_culture
-                xinhui_culture
-                malao_culture
-                huazhou_culture
-                gaozhou_culture
-                wuchuan_culture
-                yangjiang_culture
-                guangxin_culture
-                tubai_culture
-                yulin_culture
-                guibei_culture
-                yao_china_culture
-                sibe_culture
-                hlai_culture
-                zhuang_culture
-                hui_muslim_culture
-                jurchen_culture
-                daur_culture
-                tumed_culture
-                tujia_culture
-                kharchin_culture
-                kam_culture
-                oirat_culture
-                yi_culture
-                tuvan_culture
-                amdowa_culture
-                mulam_culture
-                yugur_culture
-                monguor_culture
-                uyghur_culture
-                sui_culture
-                rma_culture
-                lahu_culture
-                hmong_culture
-            }
-            capital = dadu
-            country_rank = rank_empire
-            flag = "YUA"
-            country_name = "YUA"
-
-            timed_modifier = {
-                modifier = "chi_factional_strife"
-                start_date = 1328.1.1
-                date = 1368.1.1
-                size = 1
-            }
-            timed_modifier = {
-                modifier = "chi_administration_in_disarray"
-                start_date = 1328.1.1
-                date = 1368.1.1
-                size = 1
-            }
-        }
-
-        YUA = {
-            #The Yuán fallback tag
-            include = "far_east_asia_monarchy_not_present"
-            include = "expl_mongols"
-            include = "expl_silk_road_west"
-            include = "expl_silk_road_center"
-            include = "expl_silk_road_east"
-            government = {
-                ruler_term = { character = kublai_khan start_date = 1271.12.18 end_date = 1294.2.18 }
-                ruler_term = { character = kulug_borjigin start_date = 1307.6.21 end_date = 1311.1.27 }
-                ruler_term = { character = yua_khutughtu start_date = 1329.2.27 end_date = 1329.8.30 }
-                ruler_term = { character = yua_rinchinbal start_date = 1332.10.23 end_date = 1332.12.14 }
-            }
-            court_language = northern_mandarin_dialect
-            tolerated_cultures = {
-                yan_culture
-                jilu_culture
-                jiaodong_culture
-                zhongyuan_culture
-                liang_culture
-                jianghuai_culture
-                shu_culture
-            }
-            capital = dadu
-            country_rank = rank_empire
-            flag = "YUA"
-            country_name = "YUA"
-        }
-
-        MNG = {
-            #Míng
             our_cores_conquered_by_others = { }
             include = "chinese_monarchy"
             include = "expl_silk_road_west"
@@ -29858,8 +30142,8 @@ countries = {
             }
             court_language = southern_mandarin_dialect
             liturgical_language = classical_chinese_language
-            country_rank = rank_kingdom
-            capital = shangyuan
+            country_rank = rank_empire
+            capital = dadu
         }
 
         CSO = {
@@ -35234,7 +35518,7 @@ countries = {
             country_rank = rank_county
         }
 
-        TRN = {
+        TPN = {
             #Turn
             own_control_core = {
                 frutigen
@@ -48386,17 +48670,6 @@ countries = {
             #Chagatai
             type = army
             own_control_core = {
-                akto kizilsu
-                kashgar artush barchuk maralbexi payzawat tokkuzak yingisar yopurga
-                khotan karakax keriya lop qira
-                yarkand guma kargilik poskam
-                karasahr bosten
-                kurla bugur kuerchu
-                charchan charklik niya qietai tatrang waxxari
-                urumqi
-                manas
-                mazar_tagh tikenliq
-
                 fayzabad
                 jurm
                 shiveh
@@ -48420,11 +48693,19 @@ countries = {
                 turkestan aktas_kystagy baydibek_ata ikan karnak sawran shilik
                 gharm daroot_korgon karakol muksu sangvor
                 kurchum kandysu kokpekty shar zyryan
+
+                # Qocho
+                qocho turpan lukchun pichan toksun
+                beshbalik dunla guchung mori
+                dashahai
+                kumux
+                yuanhu
+                urumqi
             }
 
             own_control_integrated = {
                 almaliq gulja narat nilka tokkuztara sarikol yulduz bortala jing
-                kuytun urghtbulaq usu_xinjiang yangjibaliq kutubi ulan_us qanbalik
+                kuytun urghtbulaq usu_xinjiang yangjibaliq kutubi ulan_us qanbalik manas
                 hoboksar gonganbao utbulaq zhekdeliq targabatay dahra_sasykkol emin
                 ilanbalyk koktuma toli atanuul bodonch bulgan chinggil ulungur kara_irtysh
                 burqin jeminay qila_panjeh ishkashim roshtqala sarhad sar_sang zebak
@@ -48477,6 +48758,35 @@ countries = {
             }
 
             capital = almaliq
+        }
+
+        YRK = {
+            # Yarkent
+            own_control_core = {
+                akto kizilsu
+                kashgar artush barchuk maralbexi payzawat tokkuzak yingisar yopurga
+                khotan karakax keriya lop qira
+                yarkand guma kargilik poskam
+                karasahr bosten
+                kurla bugur kuerchu
+                charchan charklik niya qietai tatrang waxxari
+                mazar_tagh tikenliq
+
+                # Mangalai
+                aksu bai_xinjiang kumtura kucha qumbash shayar uqturpan
+            }
+            starting_technology_level = 3
+            country_rank = rank_duchy
+            court_language = karluk_language
+            tolerated_cultures = {
+                khorezmian_culture
+            }
+
+            government = {
+                type = monarchy
+            }
+
+            capital = yarkand
         }
 
         TIM = {
@@ -48544,30 +48854,172 @@ countries = {
         }
 
         OIR = {
-            type = army
-            own_control_core = { }
+            own_control_core = {
+                choyrin_datsan bayan gazrin_chuluu takhilyn ulziit
+
+                khovd achit_nuur haerhhana huysiyn khurgan tahiltyn_khotgot tsagaan_usun
+                ulaagchiin airag_nuur hunguy khyargas_nuur telmen
+                ulaamgom dzaigil erzin tes turuum
+                uliastai ogomoor teel zavkhan
+
+                del_khad galbyn_gobi khatanbulag oiyin_korken ooshiyn_gobi zhavklant_khairkhan
+                bayankhot alxa bagh bayannurhong urad
+                bayannur uraqai xinhure
+                khara_khoto banzart_khairkhan naraan_chilaun noyon_uul zag_suujiyn_gobi
+
+                ordos aerzhai otog tongwancheng
+
+                bii choigan systyg
+                kaa balyktyg buren_khem busiyn
+                den_terek khemchik ulug usun
+
+                karakorum khar_balgas orkhon tsetserleg
+                baibalyk kharkhul mori_baridag tarvagatai
+                kedun khar_bukhyn kharuukh manzushir tuul
+                zagzuugiin_balgas altan_gadas chuluutyn delger_moron ider
+
+                barkul altayn_ovor_gobi naomao santokhe zuun_garyn_gobi
+
+                otegu_qulan bugat chikhan_agui tevsh_uul tsagaan_agui tsogt
+
+                ongiin_khiid gimpil_darjaalan shaazan_khot shaazan_tolgoi suriig
+                ulaan bogd khadat ukhaa_khudag
+
+                khalzan_shireg baidrag biger boontsagaan khangal
+                naran orog tuin
+
+                tost_uul gaxun_gobi shargyn_gobi shira_qulusun
+            }
+
             our_cores_conquered_by_others = { }
             starting_technology_level = 3
             include = "expl_mongols"
-            include = "eurasian_horde_not_present"
             government = {
                 type = steppe_horde
                 heir_selection = tribal_oldest_male
             }
-            country_rank = rank_empire
+            country_rank = rank_kingdom
             court_language = mongolian_language
             capital = karakorum
         }
 
+        # CRS = {  # Choros (dominant)
+        # 	own_control_core = {
+        # 		khovd achit_nuur haerhhana huysiyn khurgan tahiltyn_khotgot tsagaan_usun
+        # 		ulaagchiin airag_nuur hunguy khyargas_nuur telmen
+        # 		ulaamgom dzaigil erzin tes turuum
+        # 	}
+        # 	our_cores_conquered_by_others = { }
+        # 	starting_technology_level = 3
+        # 	include = "expl_mongols"
+        # 	government = {
+        # 		type = steppe_horde
+        # 		heir_selection = tribal_oldest_male
+        # 	}
+        # 	country_rank = rank_kingdom
+        # 	court_language = mongolian_language
+        # 	capital = karakorum
+        # }
+
+        # DRB = {  # Dörbet
+        # 	own_control_core = {
+        # 		uliastai ogomoor teel zavkhan
+        # 		del_khad galbyn_gobi khatanbulag oiyin_korken ooshiyn_gobi zhavklant_khairkhan
+        # 	}
+        # 	our_cores_conquered_by_others = { }
+        # 	starting_technology_level = 3
+        # 	include = "expl_mongols"
+        # 	government = {
+        # 		type = steppe_horde
+        # 		heir_selection = tribal_oldest_male
+        # 	}
+        # 	country_rank = rank_kingdom
+        # 	court_language = mongolian_language
+        # 	capital = karakorum
+        # }
+
+        # KHO = {  # Khotogoid
+        # 	own_control_core = {
+        # 		bayankhot alxa bagh bayannurhong urad
+        # 		bayannur uraqai xinhure
+        # 		khara_khoto banzart_khairkhan naraan_chilaun noyon_uul zag_suujiyn_gobi
+        # 		ordos aerzhai otog tongwancheng
+        # 	}
+        # 	our_cores_conquered_by_others = { }
+        # 	starting_technology_level = 3
+        # 	include = "expl_mongols"
+        # 	government = {
+        # 		type = steppe_horde
+        # 		heir_selection = tribal_oldest_male
+        # 	}
+        # 	country_rank = rank_kingdom
+        # 	court_language = mongolian_language
+        # 	capital = karakorum
+        # }
+
+        # THG = {  # Torghut / peripheral Oirat
+        # 	own_control_core = {
+        # 		bii choigan systyg
+        # 		kaa balyktyg buren_khem busiyn
+        # 		den_terek khemchik ulug usun
+        # 		karakorum khar_balgas orkhon tsetserleg
+        # 		baibalyk kharkhul mori_baridag tarvagatai
+        # 		urga kedun khar_bukhyn kharuukh manzushir tuul
+        # 		zagzuugiin_balgas altan_gadas chuluutyn delger_moron ider
+        # 		barkul altayn_ovor_gobi naomao santokhe zuun_garyn_gobi
+        # 		otegu_qulan bugat chikhan_agui tevsh_uul tsagaan_agui tsogt
+        # 		ongiin_khiid gimpil_darjaalan shaazan_khot shaazan_tolgoi suriig
+        # 		ulaan bogd khadat ukhaa_khudag
+        # 		khalzan_shireg baidrag biger boontsagaan khangal
+        # 		naran orog tuin
+        # 		tost_uul gaxun_gobi shargyn_gobi shira_qulusun
+        # 	}
+        # 	our_cores_conquered_by_others = { }
+        # 	starting_technology_level = 3
+        # 	include = "expl_mongols"
+        # 	government = {
+        # 		type = steppe_horde
+        # 		heir_selection = tribal_oldest_male
+        # 	}
+        # 	country_rank = rank_kingdom
+        # 	court_language = mongolian_language
+        # 	capital = karakorum
+        # }
+
+        KHA = {
+            # Kharchin Mongols
+            own_control_core = {
+                daning_pingquan huihe hezhong naiman pingquan wuping_daning fushu xingzhong xiankang lizhou longshan chuanzhou shenshui quanning songzhou pingdisonglin enhua yingchang dalai_nur_lake dongliangting shangdu chagannur huanzhou baitan yixingzhou kuanhe_xingzhou niushan limin taipingzhuang liuyuan xiabancheng zhangsanying gaoyuan baochang fuzhou weining zhongdu
+                fuxin yizhou_jinzhou yizhou_jurchen guangning wangping kaicheng ningchang tongliao
+            }
+
+            our_cores_conquered_by_others = { }
+            starting_technology_level = 3
+            include = "expl_mongols"
+            government = {
+                type = steppe_horde
+                heir_selection = tribal_oldest_male
+            }
+            country_rank = rank_duchy
+            court_language = mongolian_language
+            capital = karakorum
+
+            tolerated_cultures = {
+                jurchen_culture
+            }
+        }
+
         QCH = {
             #Qocho
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 qocho turpan lukchun pichan toksun
                 beshbalik dunla guchung mori
-                dashahai bailongdui miran loulan
+                dashahai
                 kumux
                 yuanhu
+                urumqi
                 nazhi hami geziyandun
+                bailongdui miran loulan
             }
 
             starting_technology_level = 3
@@ -48580,9 +49032,78 @@ countries = {
             capital = qocho
         }
 
+        HMI = {
+            # Kara Del Mongols
+            own_control_core = {
+                nazhi hami geziyandun niuquanzi
+            }
+
+            our_cores_conquered_by_others = { }
+            starting_technology_level = 3
+            include = "expl_mongols"
+            include = "asia_advanced_no_pagan_tribe"
+            government = {
+                heir_selection = tribal_oldest_male
+            }
+            country_rank = rank_county
+            court_language = mongolian_language
+            capital = hami
+        }
+
+        SRY = {
+            # Yughur
+            own_control_core = {
+                qidaban liyuan qilian gaotai
+            }
+
+            our_cores_conquered_by_others = { }
+            starting_technology_level = 3
+            include = "expl_mongols"
+            include = "asia_advanced_no_pagan_tribe"
+            government = {
+                heir_selection = tribal_oldest_male
+            }
+            country_rank = rank_county
+            court_language = mongolian_language
+            capital = liyuan
+        }
+
+        TUO = {
+            # Turmot
+            own_control_core = {
+                anding_suzhou dangcheng kuyu_shazhou guazhou jinta shazhou suzhou_gansu chijin yangguan
+                bailongdui miran loulan
+            }
+            our_cores_conquered_by_others = { }
+            starting_technology_level = 3
+            include = "expl_mongols"
+            include = "asia_advanced_no_pagan_tribe"
+            government = {
+                heir_selection = tribal_oldest_male
+            }
+            country_rank = rank_county
+            court_language = mongolian_language
+            capital = yangguan
+        }
+
+        HUI = {
+            # Hui
+            our_cores_conquered_by_others = {
+                jingning shuiluo longde sanchuan kaycheng_guyuan xianzhou
+                zhenrong yingli mingsha lingzhou lingwu ningxia dingyuan_lingzhou
+            }
+            starting_technology_level = 3
+            government = {
+                heir_selection = tribal_oldest_male
+            }
+            country_rank = rank_county
+            court_language = mongolian_language
+            capital = ningxia
+        }
+
         MNL = {
             #Mangalai
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 aksu bai_xinjiang kumtura kucha qumbash shayar uqturpan
             }
 
@@ -49068,6 +49589,8 @@ countries = {
             #Amdo
             own_control_core = {
                 chabcha buha caka dulan dungkar_amdo guolimu qardam amnye_machen quge sailahai zeku muxihe
+
+                sanjiaocheng
             }
 
             include = "asia_advanced_no_pagan_tribe"
@@ -49570,7 +50093,7 @@ countries = {
 
         HJN = {
             #Holjaon
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 onseong heoryeong
             }
 
@@ -49606,7 +50129,7 @@ countries = {
 
         HUL = {
             #Huligai
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 ganggye huju
             }
 
@@ -49642,6 +50165,9 @@ countries = {
             #Jusheli
             own_control_core = {
                 helong juxeri longjing yenji
+            }
+
+            our_cores_conquered_by_others = {
                 musan
             }
 
@@ -49659,7 +50185,7 @@ countries = {
 
         MAO = {
             #Maolian
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 gyeongseong buryeong gilju myeongcheon
             }
 
@@ -49693,7 +50219,7 @@ countries = {
 
         ODO = {
             #Odoli
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 chosan
             }
 
@@ -49727,7 +50253,7 @@ countries = {
 
         URY = {
             #Uryangkhad
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 hamheung dancheon bukcheong
                 jangjin
             }
@@ -49746,6 +50272,9 @@ countries = {
             #Yalu
             own_control_core = {
                 linjiang_jurchen
+            }
+
+            our_cores_conquered_by_others = {
                 gapsan samsu
             }
 
@@ -49785,10 +50314,18 @@ countries = {
             #Khmer
             own_control_core = {
                 angkor
-                angkor_borei angkor_knong apui ban_don ban_phone banlung banon banteay_chhmar battambang beng_mealea buriram champasak chhmuoh_thmei damrey_trom doh_kromum
-                idkabue indrapura_khmer ishanapura kampong_saom koh_ker koh_kong khorat kracheh longvek lumphat kampong_roessei kon_tum khukhan kramuon_sa
-                mahaxay muang_mang muang_phalan muang_phin muang_ta_oi muang_tam mueng_thung_yai nokor_reach_seyma nong_bok or_keo peam phanom_rung phimai phnom_penh phnom_santuk phnom_srok phsar_dek phutthaisong pouthi_loeu prathai_saman preah_ko prasat_andet prasat_don_an prasat_don_kau prasat_pram_lovet prasat_thong_lang
-                preah_khan_kompong_svay preah_vihear prey_nokor pursat rattanaburi rong_damrel sampheak_borak samxay sandan sangkha savannakhet sdok_kok_thom sepon song_be srey_sarchhor srok_khleang stung_treng suwannaphum tboung_khmum thuan_binh toek_khmau tonle_kong tuol_ta_mouk thung_samrit vat_phou vyadhapura
+                angkor_borei angkor_knong apui ban_don banlung banon banteay_chhmar battambang beng_mealea chhmuoh_thmei damrey_trom doh_kromum
+                indrapura_khmer ishanapura kampong_saom koh_ker koh_kong kracheh longvek lumphat kampong_roessei kon_tum kramuon_sa
+                mueng_thung_yai or_keo peam phnom_penh phnom_santuk phnom_srok phsar_dek pouthi_loeu preah_ko prasat_andet prasat_don_an prasat_don_kau prasat_pram_lovet
+                preah_khan_kompong_svay preah_vihear prey_nokor pursat rong_damrel sampheak_borak sandan sdok_kok_thom song_be srey_sarchhor srok_khleang stung_treng tboung_khmum toek_khmau tuol_ta_mouk vyadhapura
+            }
+            our_cores_conquered_by_others = {
+                mahaxay nong_bok
+                savannakhet thuan_binh muang_phalan sepon muang_ta_oi muang_phin
+                thung_samrit nokor_reach_seyma phimai khorat phanom_rung
+                phutthaisong buriram suwannaphum prathai_saman muang_tam
+                rattanaburi sangkha khukhan prasat_thong_lang vat_phou
+                champasak muang_mang ban_phone tonle_kong idkabue samxay
             }
 
             include = "south_east_asia_monarchy"
@@ -49895,6 +50432,9 @@ countries = {
                 thien_truong tho_hoang thu_vat trang_an tuyen_hoa tuyen_quang van_kiep vo_nhai vu_ninh
                 # own_control_integrated, but culture accepted
                 phon_nha vrddha_ratnapura visnupura amarendrapura
+                # Cobra
+                thuan_chau muong_cha
+                muong_luan son_la mang_viet lai_chau thuy_vi van_ban quy_hoa
             }
             own_control_integrated = { }
             our_cores_conquered_by_others = { }
@@ -49942,7 +50482,13 @@ countries = {
             #Sukhothai
             own_control_core = {
                 sukhothai
-                ban_pa_la_ta chai_nat chakangrao mae_sot mueng_bang_yom mueng_rat nakhon_chum nakhon_sawan nakhon_thai phayuhakhiri phrae phraek phuenchapura song_khwae sra_luang sri_satchanalai sri_thep tak thung_yang
+                mae_sot mueng_bang_yom nakhon_thai phrae sri_satchanalai tak thung_yang
+                pua
+                nan
+            }
+
+            our_cores_conquered_by_others = {
+                phraek chai_nat sri_thep phayuhakhiri phuenchapura ban_pa_la_ta nakhon_sawan chakangrao nakhon_chum sra_luang song_khwae mueng_rat
             }
 
             include = "south_east_asia_monarchy_no_coast"
@@ -49974,6 +50520,8 @@ countries = {
                 chiang_mai
                 chiang_dao chiang_khong chiang_rai chiang_saen chom_khao_maneerat hot lampang lamphun mae_hong_son muang_jam muang_luang_phukha muang_wang muang_yuam mueng_thoen omkoi sariang vieng_phouka wiang_fang
                 mong_hpayak mong_hsat
+                phayao
+                muang_ngao
             }
 
             include = "south_east_asia_monarchy_no_coast"
@@ -49991,17 +50539,14 @@ countries = {
                 tai_lu_culture
             }
 
-            country_rank = rank_duchy
+            country_rank = rank_kingdom
             capital = chiang_mai
         }
 
         LAV = {
             #Lavo
-            own_control_core = {
-                dong_lakhon dong_si_maha_phot lopburi muang_khuan_kra_buri phanat prachinburi rayong sa_kaeo saraburi
-            }
-
             our_cores_conquered_by_others = {
+                dong_lakhon dong_si_maha_phot lopburi muang_khuan_kra_buri phanat prachinburi rayong sa_kaeo saraburi
                 ayodhya
             }
 
@@ -50036,11 +50581,8 @@ countries = {
 
         ADH = {
             #Lavo
-            own_control_core = {
-                ayodhya
-            }
-
             our_cores_conquered_by_others = {
+                ayodhya
                 dong_lakhon dong_si_maha_phot lopburi muang_khuan_kra_buri phanat prachinburi rayong sa_kaeo saraburi
             }
 
@@ -50070,11 +50612,46 @@ countries = {
             }
         }
 
+        AYU = {
+            # Ayutthaya
+            own_control_core = {
+                ayodhya
+                # Phetchaburi
+                phetchaburi muang_na_rang chumphon
+                # Tenasserim
+                tenasserim kawthaung mergui myitta singkhon tavoy thayetchaung
+                # Suphanburi
+                suphanburi
+                chaisri kanchanaburi ratchaburi wang_pho
+                # Lavo
+                dong_lakhon dong_si_maha_phot lopburi muang_khuan_kra_buri phanat prachinburi rayong sa_kaeo saraburi
+                # Ligor
+                kraburi prasong
+                # Sukhothai
+                phraek chai_nat sri_thep phayuhakhiri phuenchapura ban_pa_la_ta nakhon_sawan chakangrao nakhon_chum sra_luang song_khwae mueng_rat
+                # Khmer
+                nokor_reach_seyma khorat phimai phutthaisong thung_samrit
+                # Vientiane
+                kaset_sombun chaiyaphum
+                # Hanthawaddy
+                ye kyainseikgyi haungtharaw
+            }
+
+            include = "south_east_asia_monarchy"
+
+            country_rank = rank_kingdom
+            capital = ayodhya
+        }
+
         PEG = {
             #Pegu / Hanthawaddy
             own_control_core = {
                 martaban
-                dagon dala danubyu donwun haungtharaw hinthada hmawbi hpa_an ingapu kawliya kyainseikgyi kyaukkyi maubin mawlamyine myanaung myaungmya naungyo ngaputaw papun pathein pegu phyu sittaung thanlyin thaton twante ye
+                dagon dala danubyu donwun hinthada hmawbi hpa_an ingapu kawliya kyaukkyi maubin mawlamyine myanaung myaungmya naungyo ngaputaw papun pathein pegu phyu sittaung thanlyin thaton twante
+            }
+
+            our_cores_conquered_by_others = {
+                ye kyainseikgyi haungtharaw
             }
 
             include = "south_east_asia_monarchy"
@@ -50115,8 +50692,13 @@ countries = {
         LIG = {
             #Ligor
             own_control_core = {
+                sichon singgora takua_pa tha_tong thalang trang wiang_sa
                 thammarat
-                chaiya ko_samui kraburi krabi mardelong prasong satingpura sichon singgora takua_pa tha_tong thalang trang wiang_sa
+                chaiya ko_samui krabi mardelong satingpura
+            }
+
+            our_cores_conquered_by_others = {
+                kraburi prasong
             }
 
             include = "south_east_asia_monarchy"
@@ -50206,7 +50788,7 @@ countries = {
 
         SPN = {
             #Suphanburi
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 suphanburi
                 chaisri kanchanaburi ratchaburi wang_pho
             }
@@ -50232,7 +50814,7 @@ countries = {
         }
 
         ARK = {
-            #Arakan
+            # Mrauk U (Previously Launggyet, Arakan in EU4)
             own_control_core = {
                 launggyet
                 akyab ann gwa maungdaw minbya mrauk_u ramree talak_burma taungup thandwe weithali
@@ -50251,12 +50833,13 @@ countries = {
                 chakma_culture
             }
 
-            capital = launggyet
+            country_rank = rank_kingdom
+            capital = mrauk_u
         }
 
         PIN = {
             #Pinya
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 pinya
                 htilin kanna kyaukse laungshe lewe magway mindon mingin myede ngape nwamethin nyaungyan pagan pakokku pindale pinle pyinmana sagu salay salin saw talok taungdwingyi thayet wetwin
             }
@@ -50274,7 +50857,7 @@ countries = {
 
         SAG = {
             #Sagaing
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 sagaing
                 amyint butalin dhipaesyin moksobo myedu ngasingu takawng
             }
@@ -50285,6 +50868,27 @@ countries = {
             }
 
             capital = sagaing
+        }
+
+        AVV = {
+            # Ava
+            own_control_core = {
+                # Pinya
+                pinya
+                htilin kanna kyaukse laungshe lewe magway mindon mingin myede ngape nwamethin nyaungyan pagan pakokku pindale pinle pyinmana sagu salay salin saw talok taungdwingyi thayet wetwin
+                # Sagaing
+                sagaing
+                amyint butalin dhipaesyin moksobo myedu ngasingu takawng
+            }
+            tolerated_cultures = {
+                zo_culture
+            }
+            include = "south_east_asia_monarchy_no_coast"
+            government = {
+                # TODO
+            }
+            country_rank = rank_kingdom
+            capital = pinya
         }
 
         TNG = {
@@ -50319,7 +50923,7 @@ countries = {
 
         PHY = {
             #Phayao
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 phayao
                 muang_ngao
             }
@@ -50334,7 +50938,7 @@ countries = {
 
         PUA = {
             #Pua / Nan
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 pua
                 nan
             }
@@ -50348,14 +50952,32 @@ countries = {
         }
 
         MUA = {
-            #Muang Sua
+            #Muang Sua (Lan Xang)
             own_control_core = {
                 muang_sua ban_luang_cheng hongsa muang_et muang_kham muang_lang muang_thaeng muang_xay nam_xuang phongsali
                 phonsavan xam_neua
             }
 
             own_control_integrated = {
+                # Vientiane, maybe make these cores?
+                vientiane phon_hong
+                loei chiang_khan dan_sai nong_khay udon_thani
+                nong_bua_lamphu phu_wiang
+                kham_muang khon_kaen mueng_fa_daet
+                muang_nakhon kut_ling muang_nong_han_luang mukdahan pak_huei_lang that_phanom
+                muang_phuan bolikham thoulakhom
+                thakhek keutkeut khamkeut ngoc_ma
+                muang_khemarat yasothon roi_et
+                khon_san mancha_khiri
                 ban_khon sayniabuli vang_vieng
+
+                # Khmer
+                mahaxay nong_bok
+                savannakhet thuan_binh muang_phalan sepon muang_ta_oi muang_phin
+                phanom_rung
+                buriram suwannaphum prathai_saman muang_tam
+                rattanaburi sangkha khukhan prasat_thong_lang vat_phou
+                champasak muang_mang ban_phone tonle_kong idkabue samxay
             }
 
             include = "south_east_asia_monarchy_no_coast"
@@ -50369,13 +50991,13 @@ countries = {
                 tai_lu_culture
             }
 
-            country_rank = rank_duchy
-            capital = muang_sua
+            country_rank = rank_kingdom
+            capital = vientiane
         }
 
         VTN = {
             #Vientiane
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 vientiane phon_hong
                 loei chiang_khan dan_sai nong_khay udon_thani
                 nong_bua_lamphu phu_wiang
@@ -50383,9 +51005,6 @@ countries = {
                 muang_nakhon kut_ling muang_nong_han_luang mukdahan pak_huei_lang that_phanom
                 muang_phuan bolikham thoulakhom
                 thakhek keutkeut khamkeut ngoc_ma
-            }
-
-            own_control_integrated = {
                 muang_khemarat yasothon roi_et
                 chaiyaphum kaset_sombun khon_san mancha_khiri
             }
@@ -50406,7 +51025,7 @@ countries = {
 
         CBK = {
             #Nguu Hong (Cobra Kingdom) https://en.wikipedia.org/wiki/Ng%C6%B0u_H%E1%BB%91ng
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 thuan_chau muong_cha
                 muong_luan son_la mang_viet lai_chau thuy_vi van_ban quy_hoa
             }
@@ -50894,7 +51513,7 @@ countries = {
 
         PTC = {
             #Phetchaburi
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 phetchaburi muang_na_rang chumphon
             }
 
@@ -50919,7 +51538,7 @@ countries = {
 
         TSM = {
             #Tenasserim
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 tenasserim kawthaung mergui myitta singkhon tavoy thayetchaung
             }
 

@@ -5975,6 +5975,11 @@ dynasty_manager = {
         home = kaesong
     }
 
+    yi_dynasty = {
+        name = { name = yi_dynasty }
+        home = namgyeong
+    }
+
     yangcheon_heo_dynasty = {
         name = { name = yangcheon_heo_dynasty }
         home = namgyeong
