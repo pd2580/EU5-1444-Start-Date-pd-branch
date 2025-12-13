@@ -2715,29 +2715,29 @@ INC_f = {
 	}
 }
 
-TIM_f = {
-	level = 3
-	required_locations_fraction = 0.8
-
-	rule = historical
-	
-	potential = {
-		culture = culture:uzbek_culture
-	}
-
-
-	name = TIM
-	flag = TIM
-	adjective = TIM_ADJ
-	tag = TIM
-	color = map_TIM
-	regions = {
-		persia_region
-	}
-
-	form_effect = {
-	}
-}
+#TIM_f = {
+#	level = 3
+#	required_locations_fraction = 0.8
+#
+#	rule = historical
+#	
+#	potential = {
+#		culture = culture:uzbek_culture
+#	}
+#
+#
+#	name = TIM
+#	flag = TIM
+#	adjective = TIM_ADJ
+#	tag = TIM
+#	color = map_TIM
+#	regions = {
+#		persia_region
+#	}
+#
+#	form_effect = {
+#	}
+#}
 
 SER_f = {
 	level = 2
@@ -4126,4 +4126,5 @@ TIM_f = {
 	flag = TIM
 	adjective = TIM_ADJ
 	tag = TIM
+	color = map_TIM
 }

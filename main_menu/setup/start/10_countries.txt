@@ -32708,7 +32708,7 @@ countries = {
 			santeh takht_e_soleyman
 			miyaneh aghkand
 			goroz shusha
-			julfa nakhchivan
+			julfa nakhchivan Hendijan
 		}
 
 		our_cores_conquered_by_others = {
@@ -55772,7 +55772,7 @@ countries = {
 			izeh andika dehdez lordegan naghan
 			somaleh bagh_malek
 			dezful  andimeshk masjed_soleyman shush shushtar
-			behbahan  dehdasht dishmok dogonbadan hendijan suq
+			behbahan  dehdasht dishmok dogonbadan suq
 			ramhormoz yasuj samiram sisakht vanak borujen deh_kord
 		}
 
@@ -60578,10 +60578,10 @@ countries = {
 			harat khabar shahr_e_babak meshkan khatunabad
 			qatruyeh saadatabad sirjan hajjiabad khabr arzu soghan
 			golashkerd kahnuj mardehek
-			rigan fahraj_narmashir marmashir bam rayen
+			rigan fahraj_narmashir narmashir bam rayen
 			zakht jiroft sarduiyeh dowlatabad_esfandaqeh rabor baft
 			ghobeyra shahdad kerman mahan
-			negar baghin rafsanjan anar bahreman dehaj ernan
+			negar bardsir baghin rafsanjan anar bahreman dehaj ernan
 		}
 		our_cores_conquered_by_others = {
 			andijan arslanbob gulcha jalalabad_fergana uzkand
