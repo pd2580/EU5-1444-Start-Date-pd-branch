@@ -23614,7 +23614,7 @@ countries = {
 
 		own_control_core = {
 			kuse kyoto
-			kuwada 
+			kuwada
 		}
 
 		include = "japanese_clan"
@@ -23692,7 +23692,7 @@ countries = {
 		}
 		country_rank = rank_county
 	}
-	
+
 	SHI = {
 		capital = kazuno
 		include = "japanese_clan"
@@ -24379,7 +24379,7 @@ countries = {
 	}
 
 	# STC = {
-	
+
 		# type = building
 
 	# 	capital = yoshino
@@ -24452,7 +24452,7 @@ countries = {
 
 		own_control_core = {
 			izumi osaka kawabe muko
-			awaji nakata awa_shikoku naka_shikoku kaifu 
+			awaji nakata awa_shikoku naka_shikoku kaifu
 			kami_shikoku nagaoka tosa agawa
 			nii
 		}
@@ -24702,7 +24702,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			makuda ichihara isumi 
+			makuda ichihara isumi
 			yamanashi yatsushiro koma_kai
 			tsuruga onyuu
 			saeki yamagata takata aki
@@ -24744,8 +24744,8 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			shiwa 
-			sakai_echizen nakaoono imadate nyuu 
+			shiwa
+			sakai_echizen nakaoono imadate nyuu
 			aichi niwa
 		}
 
@@ -24782,7 +24782,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			katori chiba musa 
+			katori chiba musa
 		}
 
 		government = {
@@ -24825,7 +24825,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			kuji_kanto taga naka ibaraki kashima 
+			kuji_kanto taga naka ibaraki kashima
 		}
 
 		government = {
@@ -24938,7 +24938,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			kamiina shimoina azumi tsukama kiso 
+			kamiina shimoina azumi tsukama kiso
 		}
 
 		government = {
@@ -25204,7 +25204,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			taka shikama akou 
+			taka shikama akou
 			wake tsudaka
 			kume mashima tomata aita
 			houmi takakusa
@@ -25212,7 +25212,7 @@ countries = {
 			aimi kume_houki
 			katou_bicchuu kaya aka
 			ashida sera miyoshi eso nuka kameshi
-			nima oochi 
+			nima oochi
 			toyota
 		}
 
@@ -25652,7 +25652,7 @@ countries = {
 
 		own_control_core = {
 			kunisaki hayami ooita amabe oono_bungo  kusu hita
-			usa 
+			usa
 		}
 
 		government = {
@@ -25692,7 +25692,7 @@ countries = {
 
 		own_control_core = {
 			satsuma kagoshima ibusuki izumi_satsuma
-			kuwabara hishikari soo kimotsuki 
+			kuwabara hishikari soo kimotsuki
 		}
 
 		government = {
@@ -25879,7 +25879,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			kesen motoyoshi oshika tome 
+			kesen motoyoshi oshika tome
 			iwai isawa esashi
 		}
 
@@ -25916,7 +25916,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			namekata shineha naraha 
+			namekata shineha naraha
 		}
 
 		government = {
@@ -25993,7 +25993,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			kitaaizu asaka kawanuma oonuma yama_jap minamiaizu 
+			kitaaizu asaka kawanuma oonuma yama_jap minamiaizu
 		}
 
 		government = {
@@ -26143,7 +26143,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			shioya kawachi haga 
+			shioya kawachi haga
 			kita_shikoku
 			mike
 		}
@@ -26922,7 +26922,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			shimohei kamihei 
+			shimohei kamihei
 		}
 
 		government = {
@@ -26961,7 +26961,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			yamamoto 
+			yamamoto
 		}
 
 		government = {
@@ -27034,7 +27034,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			hienuki 
+			hienuki
 		}
 
 		government = {
@@ -27104,7 +27104,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			tagawa 
+			tagawa
 		}
 
 		government = {
@@ -27740,7 +27740,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			higashiusuki nishiusuki koyu 
+			higashiusuki nishiusuki koyu
 		}
 
 		government = {
@@ -29249,7 +29249,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			aki_shikoku 
+			aki_shikoku
 		}
 
 		government = {
@@ -29465,7 +29465,7 @@ countries = {
 		include = "japanese_clan"
 
 		own_control_core = {
-			takaki nishisonogi kishima higashisonogi 
+			takaki nishisonogi kishima higashisonogi
 		}
 
 		government = {

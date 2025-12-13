@@ -4,7 +4,8 @@ const fileBlacklist = [
     /\.github/,
     /\.git/,
     /media/,
-    /.*\.js/
+    /.*\.js/,
+    /tools/
 ];
 const deployFolder = "../1444StartReadyForPublish";
 
