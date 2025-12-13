@@ -47193,7 +47193,6 @@ countries = {
 			merki aspara khantau kulan sretenskoe tasuktul tolekskoe
 			talas dzhulsub sarvaslyk tekabket yangi zherkorgan
 			altyntobe bogiston burchmullo
-			fergana marghinan osh quva rishton
 			isbijab arsubaniket badam karabulak kazatlyk shymkent
 			koshoy_korgon cholok_kaiyn chon_naryn jumgal ketmen_tobe naryn
 			otrar artyk_ata kyr_uzkand mardankuyik
@@ -47216,6 +47215,7 @@ countries = {
 		andijan arslanbob gulcha jalalabad_fergana uzkand
 		chach almalik_chach	nuket
 		sutkent zemukh zhaushikumtobe
+		fergana marghinan osh quva rishton
 		}
 		fanakat starting_technology_level = 3
 		include = "expl_mongols"
@@ -55550,12 +55550,6 @@ countries = {
 			marv_al_rudh ghormach jawand kusk kusk_kohneh qala_kohistan qala_naw qasr_ahnaf
 			barkdiz pandjih
 		}
-
-		own_control_integrated = {
-			adraskan azab firuzkuh_afghanistan khaysar shindand
-			torbat_e_jam salehabad
-		}
-
 		include = "expl_middle_east"
 		starting_technology_level = 3
 		include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
@@ -56693,12 +56687,6 @@ countries = {
 			kunduz ashkamesh baghlan kishim taleqan
 			araska
 		}
-
-		own_control_integrated = {
-			kulob munk
-			alishang jalalabad parun logar asadabad_kunar hajiabad kahmard bamyan yakawlang
-		}
-
 		include = "expl_middle_east"
 		include = "expl_mongols"
 		include = "eurasian_horde_no_coast_no_pleading"
@@ -60608,9 +60596,11 @@ countries = {
 			
 			amol_turkmenabad merv barkdiz khoja_idat_kala firabr navidakh akhsisek nasaf
 			paikend muborak koson chiroqchi guzor kish_shahrisabz	
+			nurota dakhat khujand konibodom isfara kokand
+			rishton marghinan fergana quva osh
 		}
 		our_cores_conquered_by_others = {
-
+			artyk_ata kyr_uzkand asnas jand barchkend karmakshi jubara yangikent buzikkala
 		}
 
 		include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
@@ -60634,7 +60624,12 @@ countries = {
 	}
 	TTK = {
 		own_control_core = {
-			balkh
+			kerki andkhoy dawlat_abad maymana qaisar shberghan
+			sar_pol sangcharak chiras boyena_qara balkh aqca
+			khamyab kelif termez basand darzanji denov hissar shuman qubodijon
+			aiwanj arkhan taleqan kishim araska farkhor hulbuk vakhs wesgird munk kulob
+			khamyab zadian boyena_qara mazar_i_sharif khulm samangan kunduz baghlan
+			ashkamesh
 		}
     
 		include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
