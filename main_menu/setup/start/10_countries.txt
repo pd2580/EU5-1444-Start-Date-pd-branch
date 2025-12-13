@@ -60555,7 +60555,7 @@ countries = {
 	}
 	TIH = {
 		own_control_core = {
-			herat
+			herat isfahan
 		}
     
 		starting_technology_level = 6
@@ -60625,7 +60625,7 @@ countries = {
 	}
 	TTK = {
 		own_control_core = {
-			kerki andkhoy dawlat_abad maymana qaisar shberghan
+			kerki andkhoy dawlat_abad maymana qaisar sheberghan
 			sar_pol sangcharak chiras boyena_qara balkh aqca
 			khamyab kelif termez basand darzanji denov hissar shuman qubodijon
 			aiwanj arkhan taleqan kishim araska farkhor hulbuk vakhs wesgird munk kulob
@@ -60656,7 +60656,7 @@ countries = {
 	
 	TIF = {
 		own_control_core = {
-			shiraz
+			shiraz beyza istakhr
 		}
     
 		include = "muslim_monarchy_no_abrahamic_dhimmi"
@@ -60719,7 +60719,7 @@ countries = {
 	TIK = {
 		own_control_core = {
 			kabul andarab kahmard bamyan charikar bagram istalif kohi_safi
-			gandamak jalalabad alishang panjshir asadaban_kunar parun hajiabad
+			gandamak jalalabad alishang panjshir asadabad_kunar parun hajiabad
 			gardez logar chak ghazni zarghun_shahr muqur nawah wazakwa maruf
 			chaman arghestan khandahar qalat_ghilji deychopan tarinkot deh_kundi kajran baghran
 		}

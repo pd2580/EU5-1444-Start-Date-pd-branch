@@ -1,6 +1,6 @@
 TIM_f = {
 	level = 3
-	required_locations_fraction = 0
+	required_locations_fraction = 1.0
 	capital_required = no
 	rule = historical
 	potential = {
