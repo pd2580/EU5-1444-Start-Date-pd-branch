@@ -1,5 +1,5 @@
-# TIH: Herat
-TIH = {
+# TIM: Herat
+TIM = {
     color = rgb { 213 0 39 }
     color2 = rgb { 255 200 200 }
     culture_definition = khorasani_culture

@@ -1,8 +1,6 @@
 ﻿l_english:
  TIM: "Timurids"
  TIM_ADJ: "Timurid"
- TIH: "Herat Timurids"
- TIH_ADJ: "Timurid"
  TIS: "Samarkand Timurids"
  TIS_ADJ: "Timurid"
  TTK: "Balkh Timurids"
@@ -17,3 +15,4 @@
  TII_ADJ: "Timurid"
  HZP: "Lorestan"
  HZP_ADJ: "Lorestani"
+ rank_kingdom_timurid_prince: "Timurid $NAME$"

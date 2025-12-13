@@ -1,4 +1,4 @@
-TIH = { # Herat Timurids
+TIM = { # Herat Timurids
 	pattern = "pattern_solid.dds"
 	color1 = hsv360 	{	204	70	55	}
 	color2 = "white"

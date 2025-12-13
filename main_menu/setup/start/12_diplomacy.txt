@@ -838,13 +838,13 @@ diplomacy_manager = {
     dependency = { first = MAM second = CYP subject_type = tributary }
     
     # ----- TIMURID EMPIRE (1444) ------
-    dependency = { first = TIH second = TIS subject_type = appanage }
-    dependency = { first = TIH second = TTK subject_type = appanage }
-    dependency = { first = TIH second = TIK subject_type = appanage }
-    dependency = { first = TIH second = TIG subject_type = appanage }
-    dependency = { first = TIH second = TIF subject_type = appanage }
-    dependency = { first = TIH second = TII subject_type = appanage }
-    dependency = { first = TIH second = MIH subject_type = vassal }
+    dependency = { first = TIM second = TIS subject_type = appanage }
+    dependency = { first = TIM second = TTK subject_type = appanage }
+    dependency = { first = TIM second = TIK subject_type = appanage }
+    dependency = { first = TIM second = TIG subject_type = appanage }
+    dependency = { first = TIM second = TIF subject_type = appanage }
+    dependency = { first = TIM second = TII subject_type = appanage }
+    dependency = { first = TIM second = MIH subject_type = vassal }
     dependency = { first = TIF second = HZP subject_type = vassal }
 
 }

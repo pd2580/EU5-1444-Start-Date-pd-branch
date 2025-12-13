@@ -47266,23 +47266,6 @@ countries = {
 		capital = almaliq
 	}
 
-	#TIM = {	#The Timurid tag
-	#	own_control_core = { }
-	#	our_cores_conquered_by_others = {}
-	#	include = "expl_mongols"
-	#	include = "eurasian_horde_not_present"
-	#	government = {
-	#		type = monarchy
-	#		heir_selection = cognatic_primogeniture
-	#		laws = {
-	#		}
-	#		privilege = {
-	#			
-	#		}
-	#	}
-	#	capital = herat
-	#}
-
 	MGE = { #The Mongol Empire
 		type = army
 		own_control_core = { }
@@ -60549,7 +60532,7 @@ countries = {
 			ruler = random
 		}
 	}
-	TIH = {
+	TIM = {
 		own_control_core = {
 			herat firozkoh chishti_sarif tulak awbeh karokh pushang
 			firuzkuh_afghanistan azab khaysar shindand adraskan
@@ -60636,7 +60619,7 @@ countries = {
 			soltaniyeh sojas zanjan mahneshan sarcham
 
 			kabul andarab kahmard bamyan charikar bagram istalif kohi_safi
-			gandamak jalalabad alishang panjshir asadabad_kunar parun hajiabad
+			gandamak jalalabad alishang panjshir asadabad_kunar parun hajiabad qonirat
 			gardez logar chak ghazni zarghun_shahr muqur nawah wazakhwa maruf yakawlang
 			chaman arghestan kandahar qalat_ghilji deychopan tarinkot deh_kundi kajran baghran
 		}
@@ -60646,7 +60629,7 @@ countries = {
 		country_rank = rank_empire
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler_term = { character = tih_shahrukh_mirza start_date = 1409.1.1 } 
 			ruler = tih_shahrukh_mirza
@@ -60675,7 +60658,7 @@ countries = {
 			
 			ayni panjakent samarkand dimishk primkent ishtixon nurita yangirabod karmana
 			tim_samarkand bukhara vardanzi alat paykend daya_kathyn darganata hazarasp
-			khiva kyat_kala kath nyzvar shimbay khurgancha xojeli pulzhai urgench vezir
+			khiva kyat_kala kath nyzvar shimbay khurgancha xojeli pulzhai urgench vezir qonirat
 			orta_kuyu talaikhan_ata uzboy gazanjyk
 			
 			amol_turkmenabad merv barkdiz khoja_idat_kala firabr navidakh akhsisek nasaf
@@ -60691,7 +60674,7 @@ countries = {
 		include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
 		country_rank = rank_kingdom
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 
 			ruler_term = { character = tis_ulugh_beg start_date = 1409.12.1 }
@@ -60722,7 +60705,7 @@ countries = {
 		country_rank = rank_duchy
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler = ttk_abd_al_latif
 		}
@@ -60760,7 +60743,7 @@ countries = {
 		country_rank = rank_kingdom
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler = tif_abdullah_mirza
 		}
@@ -60791,7 +60774,7 @@ countries = {
 		country_rank = rank_duchy
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler = tig_babur_mirza
 		}
@@ -60831,7 +60814,7 @@ countries = {
 		country_rank = rank_duchy
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler = tii_sultan_muhammad
 		}
@@ -60853,7 +60836,7 @@ countries = {
 		country_rank = rank_duchy
     
 		government = {
-			type = monarchy
+			type = timurid_prince
 			heir_selection = cognatic_primogeniture
 			ruler = tik_sultan_masud
 		}

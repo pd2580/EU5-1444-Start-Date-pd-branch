@@ -1,0 +1,7 @@
+﻿# Timurid Prince
+text = {
+    localization_key = rank_kingdom_timurid_prince
+    trigger = {
+        government_type = government_type:timurid_prince
+    }
+}
