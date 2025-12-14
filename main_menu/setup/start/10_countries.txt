@@ -1,4 +1,4 @@
-current_age = age_2_renaissance
+current_age = age_1_traditions
 
 # own_control_core
 # own_control_integrated
@@ -33968,7 +33968,6 @@ countries = {
             include = "expl_middle_east"
             include = "muslim_tribe_no_coast"
 
-
             government = {
                 type = tribe
                 heir_selection = tribal_oldest_male
@@ -49381,10 +49380,7 @@ countries = {
                 dungene lepsy sagabuyen tekeli
                 merki aspara khantau kulan sretenskoe tasuktul tolekskoe
                 talas dzhulsub sarvaslyk tekabket yangi zherkorgan
-                akhsikath asht karasuu kasan kerben pop_fargana
-                andijan arslanbob gulcha jalalabad_fergana uzkand
-                chach almalik_chach altyntobe bogiston burchmullo fanakat nuket
-                fergana marghinan osh quva rishton
+                altyntobe bogiston burchmullo
                 isbijab arsubaniket badam karabulak kazatlyk shymkent
                 koshoy_korgon cholok_kaiyn chon_naryn jumgal ketmen_tobe naryn
                 otrar artyk_ata kyr_uzkand mardankuyik sutkent zemukh zhaushikumtobe
@@ -49398,19 +49394,24 @@ countries = {
                 dashahai
                 kumux
                 yuanhu
-                urumqi
-            }
 
             own_control_integrated = {
                 almaliq gulja narat nilka tokkuztara sarikol yulduz bortala jing
-                kuytun urghtbulaq usu_xinjiang yangjibaliq kutubi ulan_us qanbalik manas
+                kuytun urghtbulaq usu_xinjiang yangjibaliq kutubi ulan_us qanbalik
                 hoboksar gonganbao utbulaq zhekdeliq targabatay dahra_sasykkol emin
                 ilanbalyk koktuma toli atanuul bodonch bulgan chinggil ulungur kara_irtysh
                 burqin jeminay qila_panjeh ishkashim roshtqala sarhad sar_sang zebak
                 shighnan vamar ilibalyk koktal kayalyk ayagoz tansyk
                 zarafshan gunt murghab oksu
             }
-
+            our_cores_conquered_by_others = {
+                akhsikath asht karasuu kasan kerben pop_fargana
+                andijan arslanbob gulcha jalalabad_fergana uzkand
+                chach almalik_chach nuket
+                sutkent zemukh zhaushikumtobe
+                fergana marghinan osh quva rishton
+                fanakat
+            }
             starting_technology_level = 3
             include = "expl_mongols"
             include = "eurasian_horde_no_muslim"
@@ -49487,50 +49488,6 @@ countries = {
             }
 
             capital = yarkand
-        }
-
-        TIM = {
-            #The Timurid tag
-            type = army
-            own_control_core = { }
-            our_cores_conquered_by_others = { }
-            starting_technology_level = 3
-            include = "expl_mongols"
-            include = "eurasian_horde_not_present"
-            government = {
-                type = steppe_horde
-                heir_selection = tribal_oldest_male
-                laws = {
-                    iqta_law = land_acquisition
-                    tribal_legal_basis_law = yassa_decree_policy
-                    tribal_organization_law = steppe_warbands_policy
-                    marriage_law = monogamous_marriage
-                    heir_religion_law = heir_any_religion
-                    legal_code_law = mongol_law_policy
-                }
-                privilege = {
-                    #Nobles
-                    banal_lordship
-                    primacy_of_nobility
-                    noble_serfdom_rights
-                    nobility_council
-                    noble_leaders_only
-                    share_of_the_spoils
-                    tribal_host
-
-                    #Clergy
-                    clergy_protected_faith
-
-                    #Burghers
-
-                    #Commoners
-                }
-            }
-            court_language = karluk_language
-            liturgical_language = classical_arabic_dialect
-            religious_school = naqshbandi_school
-            country_rank = rank_kingdom
-            capital = samarkand
         }
 
         MGE = {
@@ -49707,6 +49664,365 @@ countries = {
             tolerated_cultures = {
                 jurchen_culture
             }
+        }
+
+        TIM = {
+            own_control_core = {
+                herat firozkoh chishti_sarif tulak awbeh karokh pushang
+                firuzkuh_afghanistan azab khaysar shindand adraskan
+                kusk kusk_kohneh qala_naw jawand qala_kohistan marv_al_rudh ghormach qasr_ahnaf
+                pandjih isfahan doroh sarbisheh
+                mashhad_rizeh torbat_e_jam bakharz salehabad fariman
+                farhadgerd mazdaran mashhad radkan tus
+                sarakhs tejend kalat_nader abiward
+                dargaz anew konjikala durun
+                pivehzhan kadkan fadisheh nishapur
+                salameh roshtkhar zaveh azghand mahvelat gonabad
+                tabas_al_unnab yazduye shahrakht zohan qaen abiz zozan khargerd
+                qala_zari mazhan birjand khusf khvor deyhuk nayband
+                turaythith kashmar bajestan tun sarayan boshruyeh
+                korit tabas_al_tamr dastgerdan ribat_ushturan jondaq saghand
+                faraveh ganlygala jargalan
+                quchan khabushan shirvan_iran bojnord raz samalqan
+                meshkan_khorasan agh_qala azadvar bam_esfarayen esfarayen shoqan jajarm
+                haresabad kharturan sabzevar farumad beyarjomand meyami
+                bastam damghan qumis semnan
+
+                ravar zarand_iran kuhbanan bafq behabad
+                saryazd yazd taft nadushan meybod ardakan
+                bavanat marvast dehshir eqlid abarkuh abadeh
+                harat khabar shahr_e_babak meshkan khatunabad
+                qatruyeh saadatabad sirjan hajjiabad khabr arzu soghan
+                golashkerd kahnuj mardehek
+                rigan fahraj_narmashir narmashir bam rayen
+                zakht jiroft sarduiyeh dowlatabad_esfandaqeh rabor baft
+                ghobeyra shahdad kerman mahan
+                negar bardsir baghin rafsanjan anar bahreman dehaj ernan
+            }
+            our_cores_conquered_by_others = {
+                andijan arslanbob gulcha jalalabad_fergana uzkand
+                akhsikath asht karasuu kasan kerben pop_fargana
+                ura_tyube zomin pishagar jizzakh
+                fanakat chach sutkent zemukh zhaushikumtobe
+                nuket almalik_chach
+
+                ayni panjakent samarkand dimishk primkent ishtixon nurita yangirabod karmana
+                tim_samarkand bukhara vardanzi alat paykend daya_kathyn darganata hazarasp
+                khiva kyat_kala kath nyzvar shimbay khurgancha xojeli pulzhai urgench vezir
+                orta_kuyu talaikhan_ata uzboy gazanjyk
+
+                amol_turkmenabad merv barkdiz khoja_idat_kala firabr navidakh akhsisek nasaf
+                paikend muborak koson chiroqchi guzor kish_shahrisabz
+                nurota dakhat khujand konibodom isfara kokand
+                rishton marghinan fergana quva osh
+                artyk_ata kyr_uzkand asnas jand barchkend karmakshi jubara yangikent buzikkala
+
+                kerki andkhoy dawlat_abad maymana qaisar sheberghan
+                sar_pol sangcharak chiras boyena_qara balkh aqca
+                khamyab kelif termez basand darzanji denov hissar shuman qubodijon
+                aiwanj arkhan taleqan kishim araska farkhor hulbuk vakhs wesgird munk kulob
+                khamyab zadian boyena_qara mazar_i_sharif khulm samangan kunduz baghlan
+                ashkamesh
+
+                beyza istakhr aspas shahr_meyan qaryat_al_bidh saadatshahr
+                shiraz zarqan abadeh_tashk neyriz kherameh sarvestan
+                kavar meymand jahrom fasa ij_iran juyom
+                darab jannat_shahr hajjiabad_zarrindasht rostaq tarom
+                fin ruydar dehtal lar darz bastak ahel siraf asir
+                bagh_iran kariyan alamarvdasht khunj jahreh karzin
+                firuzabad dehram riz bandar_deyr khormoj kalameh
+                farashband sar_mashhad kazerun borazjan reyshahr
+                qala_safid nurabad bandar_rig jannaba bandar_deylam basht
+
+                nardin minudasht aliabad_katul astarabad tammisha mubarakabad incheh_borun etrek gorgan
+                maraveh sarlawuk dehistan
+
+                qom kahak neyasar kashan maranjab aveh saveh
+                khwar eyvanekey damavand rey varamin karaj rahimabad razeqan
+                lasjerd firuzkuh
+                natanz ardestan zavareh nain aqda anarak
+                tudeshk komshecheh murcheh_khvort dowlatabad dehagh
+                yazdikhwast ramsheh qumisha yangabad sohrfiruzan karkevand fereydunshahr
+                nimvar khwansar golpayegan khomeyn mahallat delijan
+                sibak aligurdaz borborud gerit dorud borujerd
+                karaj_abi_dulaf saruk tafresh khondab qorveh_darjazin hamadan kurijan
+                malayer nahavand bisotun asadabad sonqor
+                ghorveh dehgolan bashqurtaran sohrevard yasukand bijar divandarreh
+                sagzabad savojbolagh avaj qazvin takestan abhar qeydar
+                shahrestan_sofla sirdan rudbar shamiram
+                soltaniyeh sojas zanjan mahneshan sarcham
+
+                kabul andarab kahmard bamyan charikar bagram istalif kohi_safi
+                gandamak jalalabad alishang panjshir asadabad_kunar parun hajiabad qonirat
+                gardez logar chak ghazni zarghun_shahr muqur nawah wazakhwa maruf yakawlang
+                chaman arghestan kandahar qalat_ghilji deychopan tarinkot deh_kundi kajran baghran
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_empire
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler_term = { character = tim_shahrukh_mirza start_date = 1409.1.1 }
+                ruler = tim_shahrukh_mirza
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            accepted_cultures = {
+                khorezmian_culture
+            }
+
+            tolerated_cultures = {
+                afghan_culture
+                farsi_culture
+                tajik_culture
+            }
+
+            religious_school = maturidi_school
+            capital = herat
+        }
+
+        TIS = {
+            own_control_core = {
+
+                andijan arslanbob gulcha jalalabad_fergana uzkand
+                akhsikath asht karasuu kasan kerben pop_fargana
+                ura_tyube zomin pishagar jizzakh
+                fanakat chach sutkent zemukh zhaushikumtobe
+                nuket almalik_chach
+
+                ayni panjakent samarkand dimishk primkent ishtixon nurita yangirabod karmana
+                tim_samarkand bukhara vardanzi alat paykend daya_kathyn darganata hazarasp
+                khiva kyat_kala kath nyzvar shimbay khurgancha xojeli pulzhai urgench vezir qonirat
+                orta_kuyu talaikhan_ata uzboy gazanjyk
+
+                amol_turkmenabad merv barkdiz khoja_idat_kala firabr navidakh akhsisek nasaf
+                paikend muborak koson chiroqchi guzor kish_shahrisabz
+                nurota dakhat khujand konibodom isfara kokand
+                rishton marghinan fergana quva osh
+            }
+            our_cores_conquered_by_others = {
+                artyk_ata kyr_uzkand asnas jand barchkend karmakshi jubara yangikent buzikkala
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_kingdom
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+
+                ruler_term = { character = tis_ulugh_beg start_date = 1409.12.1 }
+
+                ruler = tis_ulugh_beg
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            tolerated_cultures = {
+                turkmeni_culture
+            }
+
+            religious_school = maturidi_school
+            capital = samarkand
+        }
+        TTK = {
+            own_control_core = {
+                kerki andkhoy dawlat_abad maymana qaisar sheberghan
+                sar_pol sangcharak chiras boyena_qara balkh aqca
+                khamyab kelif termez basand darzanji denov hissar shuman qubodijon
+                aiwanj arkhan taleqan kishim araska farkhor hulbuk vakhs wesgird munk kulob
+                khamyab zadian boyena_qara mazar_i_sharif khulm samangan kunduz baghlan
+                ashkamesh
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_duchy
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = ttk_abd_al_latif
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            accepted_cultures = {
+                tajik_culture
+            }
+
+            tolerated_cultures = {
+                afghan_culture
+            }
+
+            religious_school = maturidi_school
+            capital = balkh
+        }
+
+        TIF = {
+            own_control_core = {
+                beyza istakhr aspas shahr_meyan qaryat_al_bidh saadatshahr
+                shiraz zarqan abadeh_tashk neyriz kherameh sarvestan
+                kavar meymand jahrom fasa ij_iran juyom
+                darab jannat_shahr hajjiabad_zarrindasht rostaq tarom
+                fin ruydar dehtal lar darz bastak ahel siraf asir
+                bagh_iran kariyan alamarvdasht khunj jahreh karzin
+                firuzabad dehram riz bandar_deyr khormoj kalameh
+                farashband sar_mashhad kazerun borazjan reyshahr
+                qala_safid nurabad bandar_rig jannaba bandar_deylam basht
+            }
+            our_cores_conquered_by_others = {
+                kish
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_duchy
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = tif_abdullah_mirza
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            tolerated_cultures = {
+                achomi_culture
+            }
+
+            religious_school = maturidi_school
+            capital = shiraz
+        }
+
+        TIG = {
+            own_control_core = {
+                nardin minudasht aliabad_katul astarabad tammisha mubarakabad incheh_borun etrek gorgan
+                maraveh sarlawuk dehistan
+            }
+            our_cores_conquered_by_others = {
+                faraveh ganlygala jargalan
+                quchan khabushan shirvan_iran bojnord raz samalqan
+                meshkan_khorasan agh_qala azadvar bam_esfarayen bam_esfarayen shoqan jajarm
+                haresabad kharturan sabzevar farumad beyarjomand meyani
+                bastam damghan qumis semnan
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_duchy
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = tig_babur_mirza
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            accepted_cultures = {
+                khorasani_culture
+            }
+
+            religious_school = maturidi_school
+            capital = gorgan
+        }
+
+        TII = {
+            own_control_core = {
+                qom kahak neyasar kashan maranjab aveh saveh
+                khwar eyvanekey damavand rey varamin karaj rahimabad razeqan
+                lasjerd firuzkuh
+                natanz ardestan zavareh nain aqda anarak
+                tudeshk komshecheh murcheh_khvort dowlatabad dehagh
+                yazdikhwast ramsheh qumisha yangabad sohrfiruzan karkevand fereydunshahr
+                nimvar khwansar golpayegan khomeyn mahallat delijan
+                sibak aligurdaz borborud gerit dorud borujerd
+                karaj_abi_dulaf saruk tafresh khondab qorveh_darjazin hamadan kurijan
+                malayer nahavand bisotun asadabad sonqor
+                ghorveh dehgolan bashqurtaran sohrevard yasukand bijar divandarreh
+                sagzabad savojbolagh avaj qazvin takestan abhar qeydar
+                shahrestan_sofla sirdan rudbar shamiram
+                soltaniyeh sojas zanjan mahneshan sarcham
+            }
+
+            our_cores_conquered_by_others = {
+                isfahan
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_kingdom
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = tii_sultan_muhammad
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+
+            religious_school = maturidi_school
+            capital = qom
+        }
+
+        TIK = {
+            own_control_core = {
+                kabul andarab kahmard bamyan charikar bagram istalif kohi_safi
+                gandamak jalalabad alishang panjshir asadabad_kunar parun hajiabad
+                gardez logar chak ghazni zarghun_shahr muqur nawah wazakhwa maruf yakawlang
+                chaman arghestan kandahar qalat_ghilji deychopan tarinkot deh_kundi kajran baghran
+            }
+
+            starting_technology_level = 3
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            include = "expl_mongols"
+            include = "eurasian_horde_no_muslim"
+            country_rank = rank_duchy
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = tik_sultan_masud
+
+                reforms = {
+                    timurid_prince
+                }
+            }
+            accepted_cultures = {
+                afghan_culture
+            }
+
+            religious_school = maturidi_school
+            capital = kabul
         }
 
         QCH = {
@@ -58168,7 +58484,7 @@ countries = {
 
         MZF = {
             #Muzaffarids
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 yazd ardakan meybod nadushan saryazd taft
                 aqda anarak nain zavareh
                 abarkuh dehshir marvast
@@ -58202,7 +58518,7 @@ countries = {
 
         KRM = {
             #Kerman https://en.wikipedia.org/wiki/Kerman
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 kerman ghobeyra mahan shahdad
                 ravar zarand_iran kahnuj mardehek
                 rafsanjan baghin bardsir negar khatunabad
@@ -58234,7 +58550,7 @@ countries = {
         UGH = {
             #Ughanids
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 qatruyeh hajjiabad meshkan
             }
 
@@ -58313,7 +58629,7 @@ countries = {
 
         INJ = {
             #Injuids
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 shiraz abadeh_tashk kherameh sarvestan zarqan
                 firuzabad bandar_deyr dehram kalameh khormoj riz
                 kazerun borazjan reyshahr farashband sar_mashhad
@@ -58351,7 +58667,7 @@ countries = {
 
         KHU = {
             #Khunj https://en.wikipedia.org/wiki/Khonj
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 khunj jahreh karzin alamarvdasht bagh_iran ahel
             }
 
@@ -58376,7 +58692,7 @@ countries = {
 
         KRT = {
             #Kartids
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 herat awbeh chishti_sarif firozkoh karokh pushang tulak
                 azghand mahvelat roshtkhar zaveh
                 turaythith kashmar
@@ -58384,12 +58700,6 @@ countries = {
                 marv_al_rudh ghormach jawand kusk kusk_kohneh qala_kohistan qala_naw qasr_ahnaf
                 barkdiz pandjih
             }
-
-            own_control_integrated = {
-                adraskan azab firuzkuh_afghanistan khaysar shindand
-                torbat_e_jam salehabad
-            }
-
             include = "expl_middle_east"
             starting_technology_level = 3
             include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
@@ -58416,7 +58726,7 @@ countries = {
 
         SRB = {
             #Sarbadar
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 beyarjomand haresabad kharturan
             }
 
@@ -58445,7 +58755,7 @@ countries = {
         GRG = {
             #Gurgan
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 gorgan aliabad_katul etrek incheh_borun minudasht mubarakabad nardin
                 damghan bastam lasjerd qumis semnan
                 raz
@@ -58498,6 +58808,7 @@ countries = {
                 garmsir banader khanashin maiwand pangvay
                 farah anardara shahr_sabz
                 bost gereshk musa_qala
+                sepeh dowzdab
             }
 
             own_control_integrated = {
@@ -58510,9 +58821,6 @@ countries = {
             government = {
                 type = monarchy
                 heir_selection = cognatic_primogeniture
-
-                ruler_term = { character = mih_qutb_al_din_muhammad start_date = 1330.12.1 }
-
                 ruler = mih_qutb_al_din_muhammad
 
             }
@@ -58532,6 +58840,8 @@ countries = {
                 mastung nushki
                 kharan besima chagai naalbandin washuk
                 khash jaleq ladiz mashkel
+            }
+            our_cores_conquered_by_others = {
                 sepeh dowzdab
             }
 
@@ -58558,7 +58868,7 @@ countries = {
 
         SHB = {
             #Shabankara
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 ij_iran jahrom fasa juyom meymand
                 hajjiabad_zarrindasht
                 neyriz
@@ -58584,7 +58894,7 @@ countries = {
         JUR = {
             #Jurmanids
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 darab jannat_shahr rostaq tarom
             }
 
@@ -58617,20 +58927,16 @@ countries = {
                 izeh andika dehdez lordegan naghan
                 somaleh bagh_malek
                 dezful andimeshk masjed_soleyman shush shushtar
-                behbahan dehdasht dishmok dogonbadan hendijan suq
-                ramhormoz
-                fereydunshahr
-                golpayegan khwansar
+                ramhormoz yasuj samiram sisakht vanak borujen deh_kord
             }
 
             include = "expl_middle_east"
             starting_technology_level = 3
             include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
             government = {
-                type = monarchy
+                type = tribe
                 heir_selection = cognatic_primogeniture
-                ruler = hzp_rukn_al_din_yusuf_shah
-                ruler_term = { character = hzp_rukn_al_din_yusuf_shah start_date = 1330.1.1 regnal_number = 2 }
+                ruler = random
                 regnal_numbers = {
                     name_joseph.name_shah = 2
                 }
@@ -58655,7 +58961,6 @@ countries = {
             own_control_conquered = {
                 julfar al_dhaid
                 khor_fakkan shinas
-                machul
                 abu_dhabi al_ayn dubai sharjah
                 masqat al_kamil_wal_wafi as_sib jalan_buani_buali masirah qalhat sur
                 suhar al_khaburah nakhal rustaq saham
@@ -58690,7 +58995,7 @@ countries = {
 
         FAL = {
             #Fal https://en.wikipedia.org/wiki/Fal,_Fars
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 siraf asir
             }
 
@@ -58911,11 +59216,10 @@ countries = {
             #Baduspanids
             own_control_core = {
                 kojur chalus tonekabon
-                rey karaj savojbolagh
             }
 
-            own_control_integrated = {
-                qazvin
+            our_cores_conquered_by_others = {
+                rey karaj savojbolagh
             }
 
             include = "expl_middle_east"
@@ -59138,6 +59442,8 @@ countries = {
             #Khorsidi
             own_control_core = {
                 khorramabad aleshtar kuhdast pol_dokhtar sarab_dowreh
+            }
+            our_cores_conquered_by_others = {
                 borujerd aligurdaz borborud dorud gerit sibak
             }
 
@@ -59164,7 +59470,7 @@ countries = {
 
         LST = {
             #Larestan
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 lar darz dehtal fin ruydar
                 kariyan bastak
             }
@@ -59195,7 +59501,7 @@ countries = {
 
         HDN = {
             #Hamedan
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 hamadan kurijan qorveh_darjazin karaj_abi_dulaf khondab saruk tafresh
                 delijan khomeyn mahallat nimvar
             }
@@ -59225,7 +59531,7 @@ countries = {
 
         QOM = {
             #Qom
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 qom aveh kahak saveh
             }
 
@@ -59250,7 +59556,7 @@ countries = {
 
         KSA = {
             #Kashan
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 kashan maranjab neyasar
             }
 
@@ -59275,7 +59581,7 @@ countries = {
 
         ASR = {
             #Astarabad
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 astarabad tammisha
             }
 
@@ -59299,7 +59605,7 @@ countries = {
         JKR = {
             #Jauni Kurban
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 nishapur fadisheh kadkan pivehzhan
                 meshkan_khorasan
                 quchan
@@ -59333,7 +59639,7 @@ countries = {
 
         SFR = {
             #Esfarayen
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 esfarayen azadvar bam_esfarayen jajarm shoqan
                 meyami
             }
@@ -59359,7 +59665,7 @@ countries = {
 
         SBZ = {
             #Sabzevar
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 sabzevar farumad
                 agh_qala
             }
@@ -59385,7 +59691,7 @@ countries = {
 
         KHT = {
             #Kuhestan
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 birjand deyhuk khusf khvor mazhan nayband qala_zari
                 doroh sarbisheh
                 tabas_al_tamr dastgerdan korit
@@ -59415,7 +59721,7 @@ countries = {
 
         MRV = {
             #Merv
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 merv
             }
 
@@ -59440,7 +59746,7 @@ countries = {
 
         KHF = {
             #Khaf
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 salameh khargerd zozan
             }
 
@@ -59478,6 +59784,7 @@ countries = {
                 khalafabad quban
                 ahvaz dowraq hamidiyeh hoveyzeh mosharahat muhammerah
                 samawa suq_al_shuyukh kazimah
+                hendijan behbahan dehdasht dishmok dogonbadan suq machul
             }
 
             include = "expl_middle_east"
@@ -59513,11 +59820,12 @@ countries = {
 
         NGD = {
             #Neguderi
-            type = army
             own_control_core = {
+                quetta gulistan shorabak
+            }
+            our_cores_conquered_by_others = {
                 ghazni gardez muqur nawah wazakhwa zarghun_shahr
                 kandahar arghestan chaman deychopan maruf qalat_ghilji
-                quetta gulistan shorabak
             }
 
             include = "expl_middle_east"
@@ -59525,7 +59833,7 @@ countries = {
             include = "eurasian_horde_no_coast_no_pleading"
             starting_technology_level = 3
             government = {
-                type = steppe_horde
+                type = tribe
                 heir_selection = tribal_oldest_male
                 ruler = random
 
@@ -59551,18 +59859,12 @@ countries = {
         QUN = {
             #Qara'unas
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 kabul chak gandamak kohi_safi
                 andarab bagram charikar istalif panjshir
                 kunduz ashkamesh baghlan kishim taleqan
                 araska
             }
-
-            own_control_integrated = {
-                kulob munk
-                alishang jalalabad parun logar asadabad_kunar hajiabad kahmard bamyan yakawlang
-            }
-
             include = "expl_middle_east"
             include = "expl_mongols"
             include = "eurasian_horde_no_coast_no_pleading"
@@ -59595,7 +59897,7 @@ countries = {
         BSD = {
             #Besüd
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 baghran deh_kundi kajran tarinkot
             }
 
@@ -59631,7 +59933,7 @@ countries = {
         ART = {
             #Arlat
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 maymana dawlat_abad qaisar
             }
 
@@ -59666,7 +59968,7 @@ countries = {
         APD = {
             #Apardi
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 andkhoy chiras sangcharak sar_pol sheberghan
                 arkhan
             }
@@ -59702,7 +60004,7 @@ countries = {
         SLD = {
             #Suldus
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 balkh aqca boyena_qara khamyab khulm mazar_i_sharif samangan zadian
                 kelif
                 hissar aiwanj basand darzanji denov qubodijon shuman termez
@@ -59740,7 +60042,7 @@ countries = {
         BRL = {
             #Barlas
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 akhsisek guzor kerki khoja_idat_kala nasaf navidakh
                 amol_turkmenabad
                 chiroqchi firabr kish_shahrisabz koson muborak paikend
@@ -59777,7 +60079,7 @@ countries = {
         YSU = {
             #Yasa'uri
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 samarkand ayni dimishk panjakent
                 bukhara tim_samarkand
                 darganata hazarasp
@@ -59822,7 +60124,7 @@ countries = {
         KTT = {
             #Khuttal
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 vakhs hulbuk farkhor wesgird
             }
 
@@ -59857,7 +60159,7 @@ countries = {
         JLY = {
             #Jalayirs
             type = army
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 jizzakh pishagar ura_tyube zomin
                 khujand dakhkat isfara kokand konibodom
             }
