@@ -4147,6 +4147,11 @@ TIX_f = {
 	
 	potential = {
 		tag = c:TIS
+		tag = c:TIG
+		tag = c:TTK
+		tag = c:TIK
+		tag = c:TIF
+		tag = c:TII
 	}
 	
 	allow = {
@@ -4161,9 +4166,9 @@ TIX_f = {
         owns = location:qom
 	}
 	
-	name = TIM
-	flag = TIM
-	adjective = TIM_ADJ
+	name = TIX
+	flag = TIX
+	adjective = TIX_ADJ
 	tag = TIX
 	color = dark_burgundy
 	
