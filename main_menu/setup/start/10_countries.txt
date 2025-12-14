@@ -30659,7 +30659,7 @@ countries = {
             }
             country_rank = rank_duchy
             flag = "YUA"
-            country_name = "YUA"
+            country_name = NORTHERN_YUA
         }
 
         MNG = {
