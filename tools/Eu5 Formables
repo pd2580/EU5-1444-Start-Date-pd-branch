@@ -67,10 +67,13 @@ HIN = Bharat
 PUN = Punjab
 RJP = Rajputana
 GUJ = Gujarat
-EUR - Europe
+EUR = Europe
 NTR = United Tribes (Maori)
-MLC — Malacca (Disabled)
-YMT — Yamato (Disabled)
+MLC = Malacca (Disabled)
+YMT = Yamato (Disabled)
 
 Mod Formables
 AFG - Afghanistan
+
+Wanted Formables
+BUK = Bukhara
