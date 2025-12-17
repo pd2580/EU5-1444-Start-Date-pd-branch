@@ -17,8 +17,20 @@ SKU = { #Sindh decentralized tags
     religion_definition = sunni
 }
 MLA = { #Multan
-    color = rgb { 0 0 255 }
+    color = rgb { 30 144 255 }
     color2 = rgb { 0 50 255 }
     culture_definition = punjabi
+    religion_definition = sunni
+}
+NAU = { #Nagaur
+    color = rgb { 237 127 44 }
+    color2 = rgb { 200 90 20 }
+    culture_definition = marwari
+    religion_definition = sunni
+}
+MEA = { #Mewat
+    color = rgb { 176 224 230 }
+    color2 = rgb { 135 206 235 }
+    culture_definition = mewati
     religion_definition = sunni
 }

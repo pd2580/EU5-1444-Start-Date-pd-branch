@@ -6388,8 +6388,8 @@ countries = {
                 mirat hapur jansath baran saharanpur piran_i_kaliyar #Upper Doab
                 etawah kanauj sargadwari makanpur #Central Doab
                 prayag kara asni korra #Lower Doab
-                alwar narnaul bharatpur #Mewat
-                agra mathura jalesar_doab kol dholpur chandwar #Braj
+                narnaul bharatpur #Mewat
+                agra mathura jalesar_doab kol chandwar #Braj
                 sirhind sadhaura samana_india thanesar kaithal karnal #Puadh
                 hisar dadri hansi #Bhattiana
                 hajner sunam raikot faridkot bathinda firozpur muktsar #Punjabi Malwa
@@ -6416,8 +6416,8 @@ countries = {
                 daman surat rander broach baroda
                 khambat dholka ashaval modasa
                 patan deodar radhanpur
-                ranthambore sheopur sambhar ajmer
-                merta nagaur makrana kurki
+                ranthambore sheopur ajmer
+                merta makrana kurki
                 osian phulia mandalgarh bhilwara
                 bayana mandore sabalgarh
                 kalam kelapur mahagaon panar amravati illichpur gawilgarh asirgarh
@@ -6511,13 +6511,13 @@ countries = {
             #At that time Dholpur and Bayana had also been reclaimed.
 
             own_control_core = {
-                karauli
+                karauli dholpur
             }
 
             capital = karauli #Mandrael
 
             our_cores_conquered_by_others = {
-                dholpur sabalgarh bayana
+                sabalgarh bayana
             }
 
             include = "expl_india_hindu"
@@ -6539,7 +6539,7 @@ countries = {
         DRW = {
             #Dadrewa - Chauhans of Dadrewa, converts in 1350s and becomes known as the Qaimkhani dynasty
             own_control_core = {
-                taranagar jhunjhunu
+                taranagar
             }
 
             capital = taranagar
@@ -6588,7 +6588,7 @@ countries = {
             #Godara kingdom in Jangladesh
             #Biggest of the Principalities in Jangladesh prior to unification under Bikaner
             own_control_core = {
-                sardarshahar kolasar sikar
+                sardarshahar kolasar
                 udasar kolayat
             }
 
@@ -7487,6 +7487,8 @@ countries = {
 
             religious_school = hanafi_school
             government = { mysticism_vs_jurisprudence = -15 }
+            country_rank = rank_kingdom
+            
 
             include = "indian_muslim_monarchy_no_dharmic_dhimmi_no_coast_no_censor"
             capital = thatta
@@ -7951,6 +7953,7 @@ countries = {
             #https://en.wikipedia.org/wiki/Mewar
             own_control_core = {
                 nagahrada amet chittor chavand salumbar kanthal kiradu
+                khed pali
             }
 
             include = "expl_india_hindu"
@@ -7994,6 +7997,7 @@ countries = {
             own_control_core = {
                 amber_loc malpura dausa
                 manoharpur
+                sambhar sikar jhunjhunu
             }
 
             include = "expl_india_hindu"
@@ -8020,7 +8024,7 @@ countries = {
             #Had lost Mandore to Delhi in 1292 after which they became a minor subject of the Bhattis of Jaisalmer.
             #Would retake it from Delhi in 1395, after which it passed to the Rathores.
 
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 phalvardhika
             }
 
@@ -8090,7 +8094,7 @@ countries = {
         JSL = {
             #https://en.wikipedia.org/wiki/History_of_Jaisalmer
             own_control_core = {
-                jaisalmer ludrava pokhran ramgar kiradu bahadamer
+                jaisalmer ludrava pokhran ramgar kiradu bahadamer phalvardhika
             }
 
             include = "expl_india_hindu"
@@ -63935,7 +63939,7 @@ countries = {
             capital = sukkur
         }
 
-        MLA = {
+        MLA = { #Multan
             own_control_core = {
                 multan tulamba mailsi karur_punjab jalalpur_pirwala
                 dunga_bunga mir_garh_qila kot_marot khairpur channan_pir uch derawar bijnot
@@ -63945,6 +63949,7 @@ countries = {
 
             starting_technology_level = 3
             include = "indian_muslim_monarchy"
+            country_rank = rank_kingdom
 
             government = {
                 type = monarchy
@@ -63960,5 +63965,50 @@ countries = {
             capital = multan
         }
 
+        NAU = { #Nagaur
+            own_control_core = {
+                nagaur
+            }
+
+            starting_technology_level = 3
+            include = "indian_muslim_monarchy"
+            country_rank = rank_kingdom
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = random
+                
+                reforms = {
+                    indian_sultanate_reform
+                }
+            }
+
+            religious_school = hanafi_school
+            capital = nagaur
+        }
+
+        MEA = { #Mewat
+            own_control_core = {
+                alwar
+            }
+
+            starting_technology_level = 3
+            include = "indian_muslim_monarchy"
+            country_rank = rank_kingdom
+
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = random
+                
+                reforms = {
+                    indian_sultanate_reform
+                }
+            }
+
+            religious_school = hanafi_school
+            capital = alwar
+        }
     }
 }
