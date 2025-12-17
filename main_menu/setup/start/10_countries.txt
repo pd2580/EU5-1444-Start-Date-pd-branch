@@ -7051,9 +7051,10 @@ countries = {
         #SWT - Swat kingdom of Bajaur
         SWT = {
             #https://en.wikipedia.org/wiki/Sultanate_of_Swat
-                       own_control_core = {
-                baligram
-                agror behali
+            own_control_core = {
+                baligram kalam_swat timergara bajaur
+                malakand agror behali
+                mardan lalpur
 
                 #Indus Kohistan:
                 #Autonomous and perhaps better shown as independent, with one state per location/valley
@@ -7064,12 +7065,7 @@ countries = {
                 tangir sherwan udabhanda
             }
 
-            # our_cores_conquered_by_others = {
-                mardan lalpur
-                timergara bajaur kalam_swat malakand
-            }
-
-            capital = baligram
+            capital = bajaur
 
             include = "indian_muslim_monarchy_no_coast_no_censor"
             government = {
