@@ -7468,7 +7468,7 @@ countries = {
         JJK = {
             #What remains of the Chandella dynasty. Would linger on until the 1600s but had already lost most real power except for these last disconnected strongholds.
             own_control_core = {
-                kalinjar chitrakuta nagod pannna bhatta
+                kalinjar chitrakuta nagod panna bhatta
             }
 
             include = "expl_india_hindu"
@@ -64076,7 +64076,7 @@ countries = {
         }
         MLW = { #Malwa
             own_control_core = {
-                mandu bijagarh alirajpur madleshwar khandwa handia hoshangabad kherla
+                mandu bijagarh alirajpur mandleshwar khandwa handia hoshangabad kherla
                 chauragarh tendukheda bhilsa sironj chanderi sarangpur maksi ujjain mandsaur
                 ratlam dhar raisin bhojpur bhopal sehore khategaon indore maheshwar devgarh
                 mahoba
@@ -64101,7 +64101,7 @@ countries = {
         }
         KAP = { #Kalpi
             own_control_core = {
-                kalpi konch irij jhansi orchha kundar tehri lalitpur
+                kalpi konch irij jhansi orchha kundar tehri lalitpur rath
             }
 
             starting_technology_level = 3
