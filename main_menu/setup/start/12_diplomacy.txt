@@ -126,6 +126,9 @@ diplomacy_manager = {
     dependency = { first = VIJ second = TKU subject_type = tributary }
     dependency = { first = VIJ second = ZMR subject_type = tributary }
     dependency = { first = VIJ second = KLT subject_type = tributary }
+    dependency = { first = BAH second = RCH subject_type = vassal }
+
+    dependency = { first = JNP second = BGK subject_type = vassal }
 
     dependency = { first = VND second = ELA subject_type = samanta }
     dependency = { first = DBD second = KAY subject_type = samanta }

@@ -6290,10 +6290,10 @@ countries = {
             own_control_core = {
                 uchangidurga chitradurga pavagada basavapattana
                 vijayanagar bellari rayadurga haveri anegandi
-                koppal hubli darwar raichur mudgal adoni bankapura ikkeri
+                koppal hubli darwar adoni bankapura ikkeri
                 gutti gandikota ahobalam udayagiri nandyal kurnool srisailam
                 karwar anantapur porumamilla vempalle dhone puvina_padangile
-                hanagal aimangala devadurga kundgol sonda_karnataka gadag
+                hanagal aimangala kundgol sonda_karnataka gadag
 
                 tiruvannamalai
                 honnavara
@@ -6311,7 +6311,7 @@ countries = {
                 batlagundu
 
                 mangalore uppinangady bhatkal udupi karkala
-                londa madgaon goa savantvadi rajapur rabhol sangamesvara
+                londa madgaon goa savantvadi rajapur dabhol sangamesvara
                 raigarh janjira
 
                 dindigul kambam thondi devakottai 
@@ -6325,7 +6325,9 @@ countries = {
                 kavali
                 kalahasti cumbum kanigiri gudur
             }
-
+            our_cores_conquered_by_others = {
+                mudgal raichur devadurga
+            }
             include = "indian_hindu_monarchy_jain"
             country_rank = rank_kingdom
             capital = vijayanagar
@@ -6412,20 +6414,7 @@ countries = {
         #DLH - Delhi
         DLH = {
             own_control_core = {
-                delhi rohtak panipat jind #Delhi Province
-                mirat hapur jansath baran saharanpur piran_i_kaliyar #Upper Doab
-                etawah kanauj sargadwari makanpur #Central Doab
-                prayag kara asni korra #Lower Doab
-                
-                agra mathura jalesar_doab kol chandwar #Braj
-                sirhind sadhaura samana_india thanesar kaithal karnal #Puadh
-                hisar dadri hansi #Bhattiana
-                hajner sunam raikot faridkot bathinda firozpur muktsar #Punjabi Malwa
-                gugera kasur virkgarh sialkot eminabad pasrur #Mahja
-                jalandhar rahon bajwara milwat kapurthala #Doaba
-                pindi_bhattian shorkot dijkot #Rechna Doab
-                gujrat busal bhera lalian shahpur sillanwali #Jech Doab
-                shishgarh chandpur_uttar_pradesh nagina seohara shahabad_uttar_pradesh
+                delhi rohtak panipat dadri mirat hapur jansath baran saharanpur piran_i_kaliyar
             }
 
             court_language = persian_language
@@ -6446,28 +6435,14 @@ countries = {
                     taluqdar_nobility
                     indian_sultanate_reform
                 }
-                laws = {
-                    iqta_law = lenient_taxation
-                }
-                privilege = {
-                    peasants_fewer_levies
-                    peasants_free_peasantry
-                    peasants_protected_faith
-                }
-
             }
             tolerated_cultures = {
                 punjabi
-                braji
-                haryanvi_culture
-                awadhi
-                kannauji
-                mewati
             }
 
             #Delhi Setup to accurately portray the starting situation
             currency_data = {
-                stability = -40
+                stability = -10
                 prestige = 20
                 government_power = 40
                 inflation = 1
@@ -8163,7 +8138,7 @@ countries = {
         #KPL - Koppula
         KPL = {
             #https://en.wikipedia.org/wiki/Pithapuram
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 pithapuram rajamahendry pallakolu ellur visakhapatnam vizianagaram tuni rampa bobbili madugula
             }
 
@@ -8185,9 +8160,9 @@ countries = {
         #MSN - Musuniri
         MSN = {
             #https://en.wikipedia.org/wiki/Musunuri_Nayakas
-            own_control_core = {
-                bhadrachalam palampet warangal ramagiri bhongir medak khammamet kothagudem kalluru
-                nuzvid kondapalli vemulawada balkonda nirmal molangur korutla adlur tupran mangapet parkal
+            our_cores_conquered_by_others = {
+                warangal bhongir medak khammamet kothagudem kalluru
+                vemulawada balkonda nirmal molangur korutla adlur tupran mangapet parkal
             }
 
             include = "expl_india_hindu"
@@ -8211,7 +8186,8 @@ countries = {
         RCH = {
             #https://en.wikipedia.org/wiki/Recherla_Nayakas
             own_control_core = {
-                panugallu devarakonda koilkonda rachakonda golconda anumagallu amrabad nalgonda gadwal ghampur makhtal tandur kohir undrugonda wazirabad
+                panugallu devarakonda rachakonda anumagallu amrabad nalgonda gadwal ghampur makhtal undrugonda wazirabad yedagiri sagar
+                khammamet kothagudem kalluru
             }
 
             include = "expl_india_hindu"
@@ -8387,6 +8363,9 @@ countries = {
                 kataka harishpur balasore jalesar bhuban bhadrak
                 angul ratnagiri brahmapur kulada nayagarh kanthi
             }
+            own_control_integrated = {
+                tuni madugula visakhapatnam vizianagaram bobbili
+            }
 
             include = "expl_india_hindu"
             include = "indian_hindu_monarchy"
@@ -8480,6 +8459,7 @@ countries = {
             #https://en.wikipedia.org/wiki/Bastar_State Nagavamsa Dynasty
             own_control_core = {
                 dantewada barasuru sukhma rekapalle bastar kondagaon jagdalpur
+                kanker paralkot
             }
 
             #Ruler: Annan Deo (1324-1369)
@@ -8532,7 +8512,7 @@ countries = {
         #KNK - Kanker
         KNK = {
             #https://en.wikipedia.org/wiki/Kanker_State
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 kanker paralkot
             }
 
@@ -8586,6 +8566,7 @@ countries = {
             #https://en.wikipedia.org/wiki/Kingdom_of_Chanda
             own_control_core = {
                 ballarpur bramhapuri gadchiroli aheri
+                ramagiri palampet bhadrachalam
             }
 
             own_control_integrated = {
@@ -8671,6 +8652,7 @@ countries = {
             #https://en.wikipedia.org/wiki/Reddi_Kingdom
             own_control_core = {
                 kandakura motupalli adanki markapur vinukonda macherla kondavidu guntur peddapalli masulipatnam
+                kondapalli nuzvid ellur pallakolu rajamahendry rampa pithapuram
             }
 
             our_cores_conquered_by_others = {
@@ -64178,7 +64160,12 @@ countries = {
 
         BAH = { #Bahmanis
             own_control_core = {
-                bidar bijapur
+                bidar bijapur mudgal raichur devadurga
+                khanapur belgaum gokak mudhol badami bagalkot basavana_bagewadi talikota sindagi kembhav chitapur manyakheta gulbarga
+                bhalki kalyani sholhapur naldrug parenda ausa kaulas udgir dahrur qandhar nander mahagaon bir pathri jalna sindkedh
+                mehkar basim mahagaon kalam kelapur panar amravati akola illichpur gawilgarh katol bandhugara dongartal wairagarh
+                raybag ajara kolhapur athani jath miraj karad aundh satara pratapgarh singarh pune chambargonda chakan junnar ahmednagar
+                sinnar nasik daulatabad
             }
             
             starting_technology_level = 3
