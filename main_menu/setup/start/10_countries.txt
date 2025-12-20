@@ -22238,7 +22238,6 @@ countries = {
                 matruh sallum tobruk
                 el_qoseir ras_gharib safaga
                 el_jundi faran nuweiba saint_katrine
-                ayntab dluk
                 jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
                 beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
                 damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
@@ -22247,6 +22246,12 @@ countries = {
                 duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
                 tabuk_arabia al_khanbarah al_muazzam al_ukhaydir bajdah bir_ibn_hermas dhat_al_hajj
                 aynuna al_bad al_muwaylih haql makna
+                abu_kemal
+                deir_ez_zor tabqah rahba
+                ithriya sukhnah taybah
+                khanaser qastal salamiyya
+                marrat
+                dara irbid nawa
             }
 
             own_control_conquered = {
@@ -32893,13 +32898,11 @@ countries = {
 
         #Artuqids - ATQ https://en.wikipedia.org/wiki/Artuqids
         ATQ = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 midyat
-                dunaysir
+                dunaysir ras_ayn
                 araban hasakah makisin mardin tunanir
-            }
-            own_control_integrated = {
-                barqaid sinjar bara_iraq nusaybin ras_ayn
+                barqaid sinjar bara_iraq nusaybin
             }
 
             starting_technology_level = 3
@@ -33221,11 +33224,11 @@ countries = {
         #Dilmaçids - DIL https://en.wikipedia.org/wiki/Beylik_of_Dilma%C3%A7
         DIL = {
             own_control_core = {
-                kozluk siirt
+            
             }
 
             our_cores_conquered_by_others = {
-                bitlis
+                bitlis kozluk siirt
             }
 
             include = "expl_eastern_europe"
@@ -33261,6 +33264,7 @@ countries = {
             own_control_integrated = {
                 marash
                 kayseri tomarza
+                ayntab dluk
             }
 
             include = "expl_eastern_europe"
@@ -33315,7 +33319,7 @@ countries = {
 
         #Eretnids - ERE https://en.wikipedia.org/wiki/Eretnids
         ERE = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 bayburt erzincan ilic kelkit kemah sebinkarahisar siran
             }
 
@@ -33355,6 +33359,138 @@ countries = {
             religious_school = maturidi_school #Widespread among the Turks together with Hanafi
             tolerated_cultures = {
                 armenian_culture
+                turkoman_culture
+            }
+        }
+
+        AQQ = {
+            own_control_core = {
+                bayburt erzincan ilic kelkit kemah sebinkarahisar siran
+                diyarbekir ergani
+                erzurum tercan
+                cermik
+                adakli
+                cemisgezek kuzucan pertek
+            }
+
+            own_control_integrated = {
+                malazgirt hinis
+                tekman tutak varto
+                raqqa busayrah jabar madinat_far
+                urfa birecik harran suruc viransehir siverek
+                savur
+                araban hasakah makisin mardin
+                dunaysir ras_ayn
+                mus
+                kozluk
+            }
+
+            starting_technology_level = 3
+            include = "expl_eastern_europe"
+            include = "expl_muslim_mediterranean"
+            include = "turkish_beylik_no_coast_no_greek"
+            government = {
+            }
+
+            country_rank = rank_duchy
+
+            capital = erzurum
+            religious_school = maturidi_school #Widespread among the Turks together with Hanafi
+            tolerated_cultures = {
+                armenian_culture
+                turkoman_culture
+            }
+        }
+
+        QAR = {
+            own_control_core = {
+                mosul qayyarah tal_afar
+                bargiri ercis
+                altun_kupri chamchamal daquq kirkuk
+                tikrit al_sinn
+                barqaid sinjar bara_iraq nusaybin
+                tunanir midyat
+                tabriz heris maragheh sarab tufarqan
+                ganja barda beylagan lemberan gardman shamkir
+                mughan bilasuvar germi salyan varsan
+                ahar aslanduz kaleybar khiyav mardanaqom qahqaheh
+                hadishahr marand
+                urmia khameneh salmas
+                santeh takht_e_soleyman
+                miyaneh aghkand
+                zanjan mahneshan sarcham sojas
+                bashqurtaran dehgolan divandarreh ghorveh sohrevard yasukand
+                goroz shusha
+                julfa nakhchivan
+                erbil
+                duhok balad
+            }
+
+            own_control_integrated = {
+                van bahcesaray catak hosap
+                surmali igdir bayazit khor_virap
+            }
+
+            own_control_conquered = {
+                ani
+                kayen khunani
+                yerevan bjni
+                amberd artashavan spitak
+                gladzor
+                sotk
+                kapan_armenia goris kashatagh tatev
+                siirt
+                karakilise
+            }
+
+            starting_technology_level = 3
+            include = "expl_eastern_europe"
+            include = "expl_muslim_mediterranean"
+            include = "turkish_beylik_no_coast_no_greek"
+            government = {
+            }
+
+            country_rank = rank_duchy
+
+            capital = mosul
+            religious_school = maturidi_school #Widespread among the Turks together with Hanafi
+            tolerated_cultures = {
+                turkoman_culture
+            }
+        }
+
+        BGH = {
+            type = location
+            own_control_core = {
+                baghdad
+                samarra ar_rabb ukbara
+                tuz_khurma
+                balad_ruz baqubah khalis khanaqin mandali
+                al_anbar hit ayn_tamr karbala
+                anah haditha
+                hillah kufa al_udayb qadisiyyah
+                wasit abdanan al_tib arkvaz bakusaya dehloran meymeh
+                al_qatr suq_al_shuyukh
+                shush
+            }
+
+            own_control_integrated = {
+                an_nil nasiriyah numaniyyah rusafa
+                dayr_aqul badra
+                samawa
+            }
+
+            starting_technology_level = 3
+            include = "expl_middle_east"
+
+            government = {
+            }
+
+            country_rank = rank_duchy
+
+            capital = baghdad
+            religious_school = maturidi_school #Widespread among the Turks together with Hanafi
+            tolerated_cultures = {
                 turkoman_culture
             }
         }
@@ -33449,7 +33585,6 @@ countries = {
         #Ayyubids - HSN https://en.wikipedia.org/wiki/Ayyubid_dynasty
         HSN = {
             own_control_core = {
-                savur
                 hasankeyf
             }
 
@@ -33503,7 +33638,7 @@ countries = {
         KAR = {
             own_control_core = {
                 aksaray kochisar insuyu
-                kirsehir nevsehir sariyahsi
+                nevsehir sariyahsi
                 konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
                 bekarlar bor_tur ermenek
                 beysehir aksehir bolvadin sarkikaraagac seydisehir
@@ -33729,15 +33864,7 @@ countries = {
 
         #Sutayids - SUT https://en.wikipedia.org/wiki/Sutayids
         SUT = {
-            own_control_core = {
-                harput adakli keban palu
-                malazgirt hinis karakilise tekman tutak varto
-                ahlat bargiri ercis
-                diyarbekir ergani
-                erzurum tercan
-                cermik
-            }
-            own_control_integrated = {
+            our_cores_conquered_by_others = {
                 mosul qayyarah tal_afar
             }
 
@@ -33815,6 +33942,7 @@ countries = {
         BIT = {
             own_control_core = {
                 bitlis tatvan
+                ahlat
             }
 
             include = "expl_middle_east"
@@ -33837,7 +33965,7 @@ countries = {
 
         #Çemişgezek - CEM
         CEM = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 cemisgezek kuzucan pertek
             }
 
@@ -33863,7 +33991,7 @@ countries = {
         #Domboli-Bosht - DMB
         DMB = {
             own_control_core = {
-                akre
+                akre amadiya zakho
             }
 
             include = "expl_middle_east"
@@ -33887,7 +34015,7 @@ countries = {
 
         #Dasni - DSN
         DSN = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 duhok balad
             }
 
@@ -33913,6 +34041,7 @@ countries = {
         EGL = {
             own_control_core = {
                 sivrice egil
+                harput keban palu
             }
 
             include = "expl_middle_east"
@@ -33936,7 +34065,8 @@ countries = {
         #Hakkari - HKK
         HKK = {
             own_control_core = {
-                hakkari amadiya
+                hakkari
+                semdinli baskale
             }
 
             include = "expl_middle_east"
@@ -34008,8 +34138,8 @@ countries = {
 
         #Jolemark - JLM
         JLM = {
-            own_control_core = {
-                van bahcesaray baskale catak hosap zakho
+            our_cores_conquered_by_others = {
+                van bahcesaray catak hosap
             }
 
             include = "expl_middle_east"
@@ -34034,7 +34164,7 @@ countries = {
 
         #Mazenjani - MZJ
         MZJ = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 erbil
             }
 
@@ -34058,7 +34188,7 @@ countries = {
 
         #Mus - MUS
         MUS = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 mus
             }
 
@@ -34130,7 +34260,7 @@ countries = {
 
         #Zerzari - ZZR
         ZZR = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 semdinli
             }
 
@@ -34242,6 +34372,7 @@ countries = {
         TRE = {
             own_control_core = {
                 trebizond giresun gorele gumushane surmene
+                khupati rize
             }
 
             own_control_integrated = {
@@ -34338,6 +34469,7 @@ countries = {
                 bogazliyan
                 hafik sarkisla zara sivas gemerek
                 yalvac
+                kirsehir
             }
 
             own_control_integrated = {
@@ -34456,37 +34588,11 @@ countries = {
 
         #Jalayirids - JAL https://en.wikipedia.org/wiki/Jalayirid_Sultanate
         JAL = {
-            type = army
             own_control_core = {
-                baghdad
-                balad_ruz baqubah khalis khanaqin mandali
-                samarra ar_rabb tikrit ukbara
-                al_sinn
-                eyvan
-                tabriz heris maragheh sarab tufarqan
-                ganja barda beylagan lemberan gardman shamkir
-                mughan baciravan bilasuvar germi salyan varsan
-                ahar aslanduz kaleybar khiyav mardanaqom qahqaheh
-                hadishahr marand
-                urmia khameneh salmas
-                santeh takht_e_soleyman
-                miyaneh aghkand
-                goroz shusha
-                julfa nakhchivan
+                baciravan
             }
 
             our_cores_conquered_by_others = {
-                rahba anah abu_kemal haditha
-                al_anbar hit ayn_tamr karbala
-                kufa al_udayb qadisiyyah
-                dayr_aqul badra ilam
-                wasit abdanan al_tib arkvaz bakusaya dehloran meymeh
-                basra abadan abdas al_madar al_qatr zuwayr
-                an_nil nasiriyah numaniyyah rusafa
-                khalafabad machul quban
-                ahvaz dowraq hamidiyeh hoveyzeh mosharahat muhammerah
-                kazimah
-                hillah samawa suq_al_shuyukh
             }
 
             starting_technology_level = 3
@@ -34505,7 +34611,7 @@ countries = {
             }
 
             country_rank = rank_kingdom
-            capital = baghdad
+            capital = baciravan
             court_language = persian_language
             tolerated_cultures = {
                 iraqi_culture
@@ -34521,7 +34627,7 @@ countries = {
         #Artaz - ATZ
         ATZ = {
             own_control_core = {
-                maku bayazit igdir khor_virap nazok_olya qarahziaoddin siah_cheshmeh surmali
+                maku nazok_olya qarahziaoddin siah_cheshmeh
             }
 
             include = "expl_christian_caucasus"
@@ -34547,7 +34653,7 @@ countries = {
         #Hillah - HLL https://en.wikipedia.org/wiki/Hillah
         HLL = {
             #Ruler Title: Sharifate (Sharif)
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 hillah kufa al_udayb qadisiyyah
             }
 
@@ -34572,10 +34678,34 @@ countries = {
             religious_school = zaidi_school
         }
 
+        #Ardabil - ADL
+        ADL = {
+            own_control_core = {
+                ardabil nir
+            }
+
+            starting_technology_level = 3
+            include = "expl_middle_east"
+            include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+            government = {
+                type = monarchy
+                heir_selection = cognatic_primogeniture
+                ruler = random
+
+            }
+
+            capital = khalkhal
+            tolerated_cultures = {
+                azeri_culture
+            }
+            religious_school = safavid_school
+        }
+
+
         #Khalkhal - KKL
         KKL = {
-            own_control_core = {
-                ardabil hashatjin khalkhal nir
+            our_cores_conquered_by_others = {
+                hashatjin khalkhal
             }
 
             starting_technology_level = 3
@@ -34623,6 +34753,7 @@ countries = {
         ARD = {
             own_control_core = {
                 sanandaj hawraman marivan
+                bijar bijar dehgolan divandarreh ghorveh
             }
 
             include = "expl_middle_east"
@@ -34757,6 +34888,7 @@ countries = {
         KLR = {
             own_control_core = {
                 badreh darrehshahr gilan_gharb harunabad
+                eyvan ilam
             }
 
             include = "expl_middle_east"
@@ -34949,7 +35081,7 @@ countries = {
 
         #Saqiyya - SYY
         SYY = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 altun_kupri chamchamal daquq kirkuk tuz_khurma
             }
 
@@ -35003,7 +35135,6 @@ countries = {
         AAL = {
             own_control_core = {
                 burraq jayrud qutayfah
-                sakaka dumat_al_jandal aba_al_qur al_hamad arar
             }
 
             starting_technology_level = 3
@@ -35031,9 +35162,8 @@ countries = {
         #Al Mira - AMR
         AMR = {
             own_control_core = {
-                bosra dara irbid nawa salkhad suwayda
+                bosra salkhad suwayda
                 azraq
-                kaf al_harrah an_nasifah qurayyat_al_milh
             }
 
             starting_technology_level = 3
@@ -35061,17 +35191,10 @@ countries = {
         #Al Fadl - FDL
         FDL = {
             own_control_core = {
-                ithriya sukhnah taybah
-                khanaser qastal salamiyya
-                marrat
                 arak huwwarin qaryatayn tadmur
             }
 
             own_control_integrated = {
-                zubala al_labbah al_thulayma al_waqbi linah lowqah
-                al_anbar hit ayn_tamr karbala
-                anah abu_kemal haditha
-                deir_ez_zor tabqah rahba
             }
 
             starting_technology_level = 3
@@ -35108,7 +35231,7 @@ countries = {
 
         #Döger - DGE
         DGE = {
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 raqqa busayrah jabar madinat_far
                 urfa birecik harran suruc viransehir siverek
             }
@@ -50113,7 +50236,8 @@ countries = {
                 bagh_iran kariyan alamarvdasht khunj jahreh karzin
                 firuzabad dehram riz bandar_deyr khormoj kalameh
                 farashband sar_mashhad kazerun borazjan reyshahr
-                qala_safid nurabad bandar_rig jannaba bandar_deylam basht
+                qala_safid nurabad bandar_rig basht
+                jannaba
             }
             our_cores_conquered_by_others = {
                 kish
@@ -50189,17 +50313,21 @@ countries = {
                 tudeshk komshecheh murcheh_khvort dowlatabad dehagh
                 yazdikhwast ramsheh qumisha yangabad sohrfiruzan karkevand fereydunshahr
                 nimvar khwansar golpayegan khomeyn mahallat delijan
-                sibak aligurdaz borborud gerit dorud borujerd
+                sibak aligurdaz dorud borujerd
                 karaj_abi_dulaf saruk tafresh khondab qorveh_darjazin hamadan kurijan
                 malayer nahavand bisotun asadabad sonqor
-                ghorveh dehgolan bashqurtaran sohrevard yasukand bijar divandarreh
+                bashqurtaran sohrevard yasukand
                 sagzabad savojbolagh avaj qazvin takestan abhar qeydar
                 shahrestan_sofla sirdan rudbar shamiram
                 soltaniyeh sojas zanjan mahneshan sarcham
             }
 
+            own_control_integrated = {
+                hashatjin khalkhal
+            }
+
             our_cores_conquered_by_others = {
-                isfahan
+                isfahan bijar dehgolan divandarreh ghorveh
             }
 
             starting_technology_level = 3
@@ -59251,9 +59379,9 @@ countries = {
             #Ruler Title: Atabegate (Atabeg)
             own_control_core = {
                 izeh andika dehdez lordegan naghan
-                somaleh bagh_malek
-                dezful andimeshk masjed_soleyman shush shushtar
-                ramhormoz yasuj samiram sisakht vanak borujen deh_kord
+                yasuj samiram sisakht vanak borujen deh_kord
+                bagh_malek
+                dehdasht dishmok suq
             }
 
             include = "expl_middle_east"
@@ -59768,9 +59896,12 @@ countries = {
             #Khorsidi
             own_control_core = {
                 khorramabad aleshtar kuhdast pol_dokhtar sarab_dowreh
+                somaleh
+                dezful andimeshk
+                borborud gerit
             }
             our_cores_conquered_by_others = {
-                borujerd aligurdaz borborud dorud gerit sibak
+                borujerd aligurdaz dorud sibak
             }
 
             include = "expl_middle_east"
@@ -60102,15 +60233,8 @@ countries = {
         HLG = {
             #Huleguids
             type = army
-            own_control_core = {
-                dayr_aqul badra ilam
-                wasit abdanan al_tib arkvaz bakusaya dehloran meymeh
-                basra abadan abdas al_madar al_qatr zuwayr
-                an_nil nasiriyah numaniyyah rusafa
-                khalafabad quban
-                ahvaz dowraq hamidiyeh hoveyzeh mosharahat muhammerah
-                samawa suq_al_shuyukh kazimah
-                hendijan behbahan dehdasht dishmok dogonbadan suq machul
+            our_cores_conquered_by_others = {
+                basra
             }
 
             include = "expl_middle_east"
@@ -60142,6 +60266,37 @@ countries = {
 
             country_rank = rank_kingdom
             capital = basra
+        }
+
+        MSS = {
+            type = location
+            own_control_core = {
+                abdas al_madar zuwayr
+                khalafabad quban
+                ahvaz dowraq hamidiyeh hoveyzeh mosharahat
+                hendijan behbahan dogonbadan machul
+                abadan muhammerah basra
+            }
+
+            own_control_integrated = {
+                masjed_soleyman shushtar
+                ramhormoz
+                bandar_deylam
+            }
+
+            starting_technology_level = 3
+            include = "expl_middle_east"
+
+            government = {
+            }
+
+            country_rank = rank_duchy
+
+            capital = hoveyzeh
+            religious_school = maturidi_school #Widespread among the Turks together with Hanafi
+            tolerated_cultures = {
+                luri_culture
+            }
         }
 
         NGD = {
@@ -60521,18 +60676,17 @@ countries = {
         GEO = {
             #Georgia
             own_control_core = {
-                tbilisi gori kasriskari kvenipnevi mtskheta tsagvli
-                sukhumi anacopia lata_georgia pitsunda
-                bedia anaklia batumi ozurgeti poti_caucasus tsalenjikha
-                kutaisi lentekhi skande shorapani tsageri tsesi ushguli vartsikhe
+                tbilisi gori kasriskari kvenipnevi mtskheta tsagvli 
                 telavi alaverdi dusheti gremi omalo rustavi shatili
-                gagi kayen khunani jariekhi
+                jariekhi
                 hereti balakan bodbe khornabuji qakh
-                panaskerti tortum
+                dmanisi kldekari
+                gagi lori
             }
 
             our_cores_conquered_by_others = {
                 gardman shamkir
+                kayen khunani
             }
 
             include = "expl_christian_caucasus"
@@ -60614,7 +60768,7 @@ countries = {
         AAI = {
             #Alastani
             own_control_core = {
-                akhalkalaki amberd artashavan dmanisi kldekari kumayri lori spitak
+                akhalkalaki kumayri
             }
 
             include = "expl_christian_caucasus"
@@ -60645,9 +60799,10 @@ countries = {
             #Samtskhe
             own_control_core = {
                 akhaltsikhe ardahan
-                hasankale ispir khupati rize
+                hasankale ispir
                 artanuji khikhani oltu parkhali savsat
-                ani kars kagizman tmogvi
+                kars kagizman tmogvi
+                panaskerti tortum
             }
 
             include = "expl_christian_caucasus"
@@ -60677,11 +60832,10 @@ countries = {
 
         IME = {
             #Imereti / Western Georgia
-            our_cores_conquered_by_others = {
+            own_control_core = {
                 kutaisi lentekhi skande shorapani tsageri tsesi ushguli vartsikhe
                 bedia anaklia batumi ozurgeti poti_caucasus tsalenjikha
                 sukhumi anacopia lata_georgia pitsunda
-                artanuji khikhani oltu panaskerti parkhali tortum
             }
 
             include = "expl_christian_caucasus"
@@ -60798,12 +60952,8 @@ countries = {
 
         ARM = {
             #Armenia
-            own_control_core = {
-                yerevan bjni
-            }
-
             our_cores_conquered_by_others = {
-                amberd ani artashavan igdir kars kagizman khor_virap kumayri surmali
+                yerevan bjni amberd ani artashavan igdir kars kagizman khor_virap kumayri surmali
 
             }
 
@@ -60855,7 +61005,7 @@ countries = {
 
         VDZ = {
             #Vayots Dzor
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 gladzor
                 sotk
             }
@@ -61083,12 +61233,8 @@ countries = {
 
         SYU = {
             #Syunik
-            own_control_core = {
-                kapan_armenia goris kashatagh tatev
-            }
-
             our_cores_conquered_by_others = {
-                julfa nakhchivan
+                julfa nakhchivan kapan_armenia goris kashatagh tatev
             }
 
             include = "expl_christian_caucasus"
@@ -61280,18 +61426,11 @@ countries = {
             #Yemen
             own_control_core = {
                 zabid al_ghulayfiqah as_salafiyah mikhlaf_al_hubishiyah mudhaykirah
-                adan al_arah al_mafalis lahj zinjibar
-                birali al_mukalla al_shihr azzan balhaf habban hajar
-                ahwar al_qara jurrah lawdar shuqra
-                shibam al_khuraybah arrayda dha_sohis huraydah khayrij rakhyah sayun tarim
                 al_hirda hajjah harad_asir khamir shaharah
                 hudaida al_luhayyah as_salif hutayb kawkaban
-                ibb dhafar juban musaymir yahr
                 jazan al_haqu al_khosuf farasan sabt_bani_bishr sabya
-                marib baraqish dhamar harib radaa
-                sana_yemen thula
-                shabwa al_bayda_yemen bayhan markha nisab
                 taizz al_mandab al_mukha hays mawza
+                al_arah al_mafalis
             }
 
             our_cores_conquered_by_others = {
@@ -61323,10 +61462,81 @@ countries = {
             capital = zabid
         }
 
+        RAS = {
+            #Rassids
+            own_control_core = {
+                sana_yemen thula
+                marib baraqish dhamar harib radaa
+                al_mahjal huth main suq_al_ghinan           
+            }
+
+            include = "expl_middle_east"
+            starting_technology_level = 3
+            include = "muslim_monarchy"
+            government = {
+            }
+
+            tolerated_cultures = {
+            }
+
+            religious_school = shafii_school
+            government = { mysticism_vs_jurisprudence = 20 }
+
+            capital = sana_yemen
+        }
+
+        TAH = {
+            #Tahirids
+            own_control_core = {
+                adan lahj zinjibar
+                ibb dhafar juban musaymir yahr
+                ahwar al_qara jurrah lawdar shuqra
+                al_bayda_yemen bayhan markha nisab    
+            }
+
+            include = "expl_middle_east"
+            starting_technology_level = 3
+            include = "muslim_monarchy"
+            government = {
+            }
+
+            tolerated_cultures = {
+            }
+
+            religious_school = shafii_school
+            government = { mysticism_vs_jurisprudence = 20 }
+
+            capital = adan
+        }
+
+        KTH = {
+            #Kathiri
+            own_control_core = {
+                birali al_mukalla azzan balhaf habban hajar
+                shibam al_khuraybah arrayda dha_sohis huraydah rakhyah sayun tarim
+                shabwa  
+            }
+
+            include = "expl_middle_east"
+            starting_technology_level = 3
+            include = "muslim_monarchy"
+            government = {
+            }
+
+            tolerated_cultures = {
+            }
+
+            religious_school = shafii_school
+            government = { mysticism_vs_jurisprudence = 20 }
+
+            capital = sayun
+        }
+
         DHF = {
-            #Dhofar
+            #Dhofar/Mahra
             own_control_core = {
                 dhufar khalfut mirbat qishn raysut hadibu qulensya
+                al_shihr khayrij
             }
 
             include = "expl_middle_east"
@@ -61360,6 +61570,7 @@ countries = {
                 nita_arabia al_suman al_uyayna jannah jarrarah qaryat_ulya
                 al_bidda al_huwaila al_mashqar al_udayd eglat_faisal zubarah
                 al_hunayy harad_al_ahsa khurays rumah urayrah
+                kazimah
             }
 
             our_cores_conquered_by_others = {
@@ -61467,6 +61678,8 @@ countries = {
             own_control_core = {
                 hail ash_shuaybah_hail baqa
                 al_hufayr jubbah mawqaq umm_al_qulban
+                zubala al_labbah al_thulayma al_waqbi linah lowqah
+                sakaka dumat_al_jandal aba_al_qur al_hamad arar
             }
 
             include = "expl_middle_east"
@@ -61556,6 +61769,7 @@ countries = {
             own_control_core = {
                 tayma ash_shamli
                 abu_qasr basithah bir_fajr
+                kaf al_harrah an_nasifah qurayyat_al_milh
             }
 
             include = "expl_middle_east"
@@ -61825,7 +62039,7 @@ countries = {
         YAM = {
             #Yam
             own_control_core = {
-                al_mahjal dhahran huth main najran sadah suq_al_ghinan
+                dhahran najran sadah
             }
 
             include = "expl_middle_east"
