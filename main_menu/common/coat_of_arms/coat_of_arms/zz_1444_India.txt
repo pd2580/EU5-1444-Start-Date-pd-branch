@@ -213,3 +213,10 @@ BKH = { # Badakhshan
     color1 = "dark_green"
     color2 = "white"
 }
+KSH = {
+	color = map_kashmir
+	color2 = map_kashmir_2
+
+	culture_definition = kashmiri_culture
+	religion_definition = sunni
+}
