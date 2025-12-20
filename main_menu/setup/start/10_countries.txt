@@ -49486,10 +49486,7 @@ countries = {
                 lhasa damzhung drigung galo gyama taklung tsora tsurphu
                 nedong densatil gongkar nyemo rinpung_yarlung samye
                 dibang siang siyom subansiri
-                trongsa bumthang lhuntsi tawang trasigang zhemgang zhongkar
-                itanagar bomdila kameng kamla kurung nakshaparvat
-                phari
-                paro daga jabar_goemba punakha thimpu wangdue
+                bomdila kameng kamla kurung 
                 ziro
                 metog rigyal tirkong
                 chumdo shukden
@@ -51079,9 +51076,9 @@ countries = {
 
         LMN = {
             #Lho Mon
-            our_cores_conquered_by_others = {
+            own_control_core = {
                 paro daga jabar_goemba punakha thimpu wangdue
-                zhemgang trongsa bumthang
+                trongsa bumthang lhuntsi tawang trasigang zhemgang zhongkar
             }
 
             include = "asia_advanced_no_pagan_tribe"
@@ -51117,7 +51114,7 @@ countries = {
         SKK = {
             #Sikkim
             own_control_core = {
-                yuksom dalingkot gangtok tsunthang
+                yuksom dalingkot gangtok phari tsunthang
             }
 
             include = "asia_advanced_no_pagan_tribe"
@@ -53397,6 +53394,7 @@ countries = {
                 tezpur bordowa rowta durjaya guwahati
                 lyngngam sohra nabagram
                 daboka sutnga jaintiapur
+                itanagar nakshaparvat
             }
 
             include = "expl_india_hindu"
