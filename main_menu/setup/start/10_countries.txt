@@ -34973,8 +34973,12 @@ countries = {
 
         #Kelali - KEL
         KEL = {
+            own_control_core = {
+                 kamyaran muchesh sonqor
+            }
+
             our_cores_conquered_by_others = {
-                asadabad kamyaran malayer muchesh nahavand sonqor
+                asadabad malayer nahavand
             }
 
             include = "expl_middle_east"
@@ -34995,7 +34999,7 @@ countries = {
                 lur_culture
             }
 
-            capital = nahavand
+            capital = kamyaran
             religious_school = hanafi_school
             government = { mysticism_vs_jurisprudence = -15 }
 
@@ -35055,7 +35059,7 @@ countries = {
 
         #Rankali - RKL
         RKL = {
-            our_cores_conquered_by_others = {
+            own_control_core = {
                 bisotun holeylan kermanshah
             }
 
@@ -50344,7 +50348,7 @@ countries = {
                 nimvar khwansar golpayegan khomeyn mahallat delijan
                 sibak aligurdaz dorud borujerd
                 karaj_abi_dulaf saruk tafresh khondab qorveh_darjazin hamadan kurijan
-                malayer nahavand bisotun asadabad sonqor
+                malayer nahavand asadabad
                 bashqurtaran sohrevard yasukand
                 sagzabad savojbolagh avaj qazvin takestan abhar qeydar
                 shahrestan_sofla sirdan rudbar shamiram
