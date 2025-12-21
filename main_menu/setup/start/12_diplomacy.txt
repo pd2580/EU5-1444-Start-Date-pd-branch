@@ -686,6 +686,9 @@ diplomacy_manager = {
     dependency = { first = BUR second = PIC subject_type = fiefdom }
     dependency = { first = BUR second = FCB subject_type = fiefdom }
 
+    dependency = { first = ARS second = BGN subject_type = vassal }
+    dependency = { first = ARS second = STP subject_type = vassal }
+
     dependency = { first = BRB second = LIM subject_type = vassal }
     dependency = { first = BRB second = CJK subject_type = vassal }
 

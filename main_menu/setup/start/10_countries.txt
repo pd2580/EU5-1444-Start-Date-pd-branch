@@ -4565,11 +4565,12 @@ countries = {
                 # Earldom of Chester
                 #chester macclesfield nantwich
 
+                lancaster blackburn liverpool preston manchester
+
                 # English towns on the Welsh March
                 shrewsbury hereford
             }
             own_control_integrated = {
-                # Earldom of Chester
                 # cornwall
                 launceston truro bodmin
                 # channel
@@ -4895,13 +4896,8 @@ countries = {
 
         LAN = {
             #Palatinate of Lancaster
-            own_control_core = {
+            our_cores_conquered_by_others = {
                 lancaster blackburn liverpool preston manchester
-            }
-
-            own_control_conquered = {
-                monmouth
-                kidwelly
             }
 
             include = "catholic_monarchy_english_lordship"
@@ -4958,6 +4954,8 @@ countries = {
             own_control_core = {
                 # Principality of Wales
                 aberystwyth anglesey cardigan carnarvon harlech conwy carmarthen penllyn
+                monmouth
+                kidwelly
             }
             our_cores_conquered_by_others = {
                 # Earldom of Chester
@@ -14553,8 +14551,7 @@ countries = {
                 lautrec #Vic. de Lautrec
                 castres #S. de Castres
 
-                charroux
-                bellac
+                laval
             }
 
             our_cores_conquered_by_others = {
@@ -15209,6 +15206,7 @@ countries = {
                 # own_control_integrated, but culture accepted
                 clermont_en_beauvaisis #C. Clermont-en-Beauvaisis
                 chambon #B. de Combraille
+                chateau_chinon #S. Chateau-Chinon
             }
             starting_technology_level = 3
             include = "expl_western_europe"
@@ -15249,6 +15247,8 @@ countries = {
             own_control_core = {
                 gueret aubusson #La Marche
                 bourganeuf
+                charroux
+                bellac
             }
 
             own_control_integrated = {
@@ -16816,7 +16816,7 @@ countries = {
         #Artois
         ARS = {
             own_control_core = {
-                arras bapaume bethune hesdin lens saint_omer saint_pol boulogne_sur_mer
+                arras bapaume bethune hesdin lens saint_omer
             }
 
             starting_technology_level = 3
@@ -16849,7 +16849,7 @@ countries = {
 
         #Saint-Pol
         STP = {
-            our_cores_conquered_by_others = {
+            own_control_core = {
                 saint_pol
             }
 
@@ -16885,7 +16885,7 @@ countries = {
 
         #Boulogne
         BGN = {
-            our_cores_conquered_by_others = {
+            own_control_core = {
                 boulogne_sur_mer
             }
 
@@ -17012,10 +17012,6 @@ countries = {
                 beaupreau le_lude passavant loudun
             }
 
-            own_control_integrated = {
-                laval
-            }
-
             starting_technology_level = 3
             include = "expl_western_europe"
             include = "catholic_monarchy_no_coast"
@@ -17117,7 +17113,6 @@ countries = {
             own_control_core = {
                 nevers donzy
                 st_pierre_de_moutier montreuillon cercy
-                chateau_chinon #S. Chateau-Chinon
             }
 
             starting_technology_level = 3
@@ -17411,7 +17406,7 @@ countries = {
                 amiens abbeville corbie montreuil peronne saint_quentin breteuil nesle
             }
             our_cores_conquered_by_others = {
-                calais boulogne_sur_mer guise hirson marle
+                calais guise hirson marle
                 ribemont noyon
             }
 
@@ -17423,7 +17418,7 @@ countries = {
                 heir_selection = cognatic_primogeniture
                 ruler = random
             }
-            capital = boulogne_sur_mer
+            capital = amiens
         }
 
         #Toulouse (Revolter)
