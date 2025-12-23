@@ -8933,4 +8933,14 @@ dynasty_manager = {
             name_gawhar name_khanzada name_sultan name_aisha name_fatima name_ruqaiya name_zehra
         }
     }
+    valois_burgundy_dynasty = {
+        name = { name = valois_burgundy_dynasty }
+        home = dijon
+        male_names = {
+            name_john name_charles name_philip name_anthony name_antoine
+        }
+        female_names = {
+            name_mary name_anne name_bonne name_agnes
+        }
+    }
 }

@@ -1,0 +1,6 @@
+﻿l_english:
+  burgundian_crownland: "Burgundian Crownland"
+  burgundian_crownland_desc: "Burgundian Crownland"
+
+  LEAD_burgundian_crownland: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+  AM_burgundian_crownland: "[SUBJECT_TYPE.GetName] of $LIST$."

@@ -101258,4 +101258,17 @@ character_db = {
         ruler_trait = tactical_genius
         ruler_trait = ambitious
     }
+
+    bur_philip_the_good = {
+        first_name = { name = name_philip }
+        nickname = { name = nick_the_good }
+        culture = burgundian
+        religion = catholic
+        adm = 85 dip = 70 mil = 55
+        estate = nobles_estate
+        birth_date = 1396.11.10
+        birth = dijon
+        dynasty = valois_burgundy_dynasty
+        tag = BUR
+    }
 }

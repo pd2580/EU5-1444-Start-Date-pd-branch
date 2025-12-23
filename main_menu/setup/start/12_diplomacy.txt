@@ -193,7 +193,7 @@ diplomacy_manager = {
 
     #Vassals of vassals
     dependency = { first = NRM second = MIE subject_type = fiefdom }
-    dependency = { first = FLA second = NAM subject_type = vassal }
+    dependency = { first = BUR second = NAM subject_type = vassal }
     dependency = { first = FOI second = MDM subject_type = fiefdom }
     dependency = { first = ALE second = PRC subject_type = fiefdom }
     dependency = { first = AMG second = MRC subject_type = fiefdom }
@@ -674,11 +674,11 @@ diplomacy_manager = {
 
     dependency = { first = MUN second = OSN subject_type = vassal }
 
-    dependency = { first = BUR second = FLA subject_type = fiefdom }
-    dependency = { first = BUR second = HAI subject_type = fiefdom }
-    dependency = { first = BUR second = BRB subject_type = fiefdom }
-    dependency = { first = BUR second = HOL subject_type = fiefdom }
-    dependency = { first = BUR second = LUX subject_type = fiefdom }
+    dependency = { first = BUR second = FLA subject_type = burgundian_crownland }
+    dependency = { first = BUR second = HAI subject_type = burgundian_crownland }
+    dependency = { first = BUR second = BRB subject_type = burgundian_crownland }
+    dependency = { first = BUR second = HOL subject_type = burgundian_crownland }
+    dependency = { first = BUR second = LUX subject_type = burgundian_crownland }
     dependency = { first = BUR second = NEV subject_type = vassal }
     dependency = { first = BUR second = ARS subject_type = vassal }
     dependency = { first = BUR second = PIC subject_type = vassal }

@@ -14789,31 +14789,11 @@ countries = {
             include = "expl_western_europe"
             include = "catholic_monarchy_no_coast"
             government = {
-                ruler = bur_eudes_iv_burgundy
-
-                ruler_term = { character = fra_hugues_le_grand start_date = 952.12.17 end_date = 956.6.16 regnal_number = 0 }
-                ruler_term = { character = bur_otton_bourgogne start_date = 956.6.16 end_date = 965.2.23 regnal_number = 0 }
-                ruler_term = { character = bur_eudes_henri_bourgogne start_date = 965.2.23 end_date = 1002.10.15 regnal_number = 0 }
-
-                ruler_term = { character = fcb_othon_guillaume_burgundy start_date = 1002.10.15 end_date = 1004.1.1 regnal_number = 0 }
-
-                ruler_term = { character = fra_robert_ii_capet start_date = 1004.1.1 end_date = 1016.1.30 regnal_number = 0 }
-                ruler_term = { character = fra_henri_i_capet start_date = 1016.1.30 end_date = 1032.1.1 regnal_number = 1 }
-
-                ruler_term = { character = bur_robert_i_burgundian start_date = 1032.1.1 end_date = 1076.3.21 regnal_number = 1 }
-                ruler_term = { character = bur_hugues_i_burgundian start_date = 1076.3.21 end_date = 1093.8.29 regnal_number = 1 }
-                ruler_term = { character = bur_eudes_i_burgundian start_date = 1093.8.29 end_date = 1103.3.23 regnal_number = 1 }
-                ruler_term = { character = bur_hugues_ii_burgundian start_date = 1103.3.23 end_date = 1143.2.6 regnal_number = 2 }
-                ruler_term = { character = bur_eudes_ii_burgundian start_date = 1143.2.6 end_date = 1162.6.27 regnal_number = 2 }
-                ruler_term = { character = bur_hugues_iii_burgundian start_date = 1162.6.27 end_date = 1192.8.25 regnal_number = 3 }
-                ruler_term = { character = bur_eudes_iii_burgundian start_date = 1192.8.25 end_date = 1218.7.6 regnal_number = 3 }
-                ruler_term = { character = bur_hugues_iv_burgundian start_date = 1218.7.6 end_date = 1272.10.27 regnal_number = 4 }
-                ruler_term = { character = bur_robert_ii_burgundian start_date = 1272.10.27 end_date = 1306.3.21 regnal_number = 2 }
-                ruler_term = { character = bur_hugues_v_burgundian start_date = 1306.3.21 end_date = 1315.5.9 regnal_number = 5 }
-                ruler_term = { character = bur_eudes_iv_burgundy start_date = 1315.5.9 regnal_number = 4 }
+                ruler = bur_philip_the_good
 
                 regnal_numbers = {
                     name_robert = 2
+                    name_philip = 2
                     name_henry = 1
                     name_hugh = 5
                     name_otto = 4
