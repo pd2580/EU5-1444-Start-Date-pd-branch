@@ -101213,6 +101213,7 @@ character_db = {
         ruler_trait = ambitious
     }
 
+<<<<<<< HEAD
     bur_philip_the_good = {
         first_name = { name = name_philip }
         nickname = { name = nick_the_good }
@@ -101225,6 +101226,7 @@ character_db = {
         dynasty = valois_burgundy_dynasty
         tag = BUR
     }
+=======
 	joe_taejo = { # https://en.wikipedia.org/wiki/Taejo_of_Joseon
 		first_name = { name = name_seong_gye }
 		culture = korean_culture
@@ -101274,4 +101276,5 @@ character_db = {
 		dynasty = yi_dynasty
 		tag = JOE
 	}
+>>>>>>> 1b732719c8f8b3ee7907d790a796266bf32d69a5
 }
