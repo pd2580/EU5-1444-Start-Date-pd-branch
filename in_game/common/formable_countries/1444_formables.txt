@@ -773,3 +773,41 @@ GAN_f = { #Greater Austonesia
 		}
 	}
 }
+
+SPI_f = { #Sardinia-Piedmont
+	level = 2
+	required_locations_fraction = 0.75
+	capital_required = yes 
+	rule = historical
+	
+	potential = {
+		culture = { has_culture_group = culture_group:italian_group }
+	}
+
+	allow = {
+		any_owned_location = { 
+			area = area:piemonte_area 
+			area = area:sardinia_area 
+		}
+	}
+	
+	name = SPI
+	flag = SPI
+	adjective = SPI_ADJ
+	tag = SPI
+	color = map_SPI
+	areas = {
+		piemonte_area
+		sardinia_area
+	}
+	provinces = {
+		savoy_province
+		levante_province
+		punente_province
+	}
+	locations = {
+		nice
+	}
+	form_effect = {
+	}
+}

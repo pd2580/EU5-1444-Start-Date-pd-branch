@@ -41,6 +41,9 @@
  LBV_ADJ: "Landshuter"
  HAL: "Red Ruthenia"
  HAL_ADJ: "Red Ruthenia"
+ SPI: "Sardinia-Piedmont"
+ SPI_ADJ: "Sardinian-Piedmontese"
+ SPI_f: "Sardinia-Piedmont"
 
 #Indian Subcontinent
  SIW: "Siwistan"
